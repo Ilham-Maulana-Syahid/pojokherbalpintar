@@ -1,7 +1,9 @@
 import { NextRequest, NextResponse } from "next/server";
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
-const GEMINI_API_KEY = process.env.GEMINI_API_KEY?.trim();
+const GEMINI_API_KEY = process.env.GEMINI_API_KEY
+  ?.trim()
+  .replace(/^["']|["']$/g, "");
 const MODEL = process.env.GEMINI_MODEL?.trim() || "gemini-2.5-flash";
 
 const SYSTEM_PROMPT = `Kamu adalah "Herbal AI" dari Pojok Herbal Pintar — asisten herbal ahli.
@@ -104,17 +106,22 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ reply: text });
   } catch (error: unknown) {
     console.error("Gemini error:", error);
-    const msg =
-      error instanceof Error ? error.message : "Unknown error";
+    const msg = error instanceof Error ? error.message : "Unknown error";
     const isTimeout = /timeout/i.test(msg);
+    const isInvalidCredentials =
+      /401|unauthorized|invalid authentication|access_token_type_unsupported/i.test(
+        msg
+      );
     return NextResponse.json(
       {
         error: isTimeout
           ? "AI membutuhkan waktu terlalu lama. Silakan coba lagi."
+          : isInvalidCredentials
+            ? "GEMINI_API_KEY tidak valid. Gunakan API key Gemini dari Google AI Studio, bukan OAuth access token."
           : "Gagal memproses",
-        detail: msg,
+        detail: isInvalidCredentials ? undefined : msg,
       },
-      { status: isTimeout ? 504 : 500 }
+      { status: isTimeout ? 504 : isInvalidCredentials ? 401 : 500 }
     );
   }
 }
