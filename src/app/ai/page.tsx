@@ -140,7 +140,7 @@ export default function AIPage() {
   };
 
   return (
-    <div className="min-h-[100dvh] pt-20 pb-0 flex flex-col bg-nature">
+    <div className="h-[100dvh] min-h-0 overflow-hidden pt-20 pb-0 flex flex-col bg-nature">
       <div className="flex-1 flex flex-col max-w-4xl mx-auto w-full px-4 min-h-0">
         {/* Header */}
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="text-center py-6">
@@ -168,7 +168,7 @@ export default function AIPage() {
         </AnimatePresence>
 
         {/* Messages */}
-        <div className="min-h-0 flex-1 overflow-y-auto overscroll-contain space-y-4 py-4">
+        <div className="min-h-0 flex-1 overflow-y-auto overscroll-y-contain touch-pan-y space-y-4 py-4">
           <AnimatePresence>
             {messages.map((msg, index) => (
               <motion.div key={index} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }} className={`flex ${msg.role === "user" ? "justify-end" : "justify-start"}`}>
