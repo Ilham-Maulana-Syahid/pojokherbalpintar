@@ -1,8 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
-const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
-const MODEL = "gemini-3.5-flash-lite";
+const GEMINI_API_KEY = process.env.GEMINI_API_KEY?.trim();
+const MODEL = process.env.GEMINI_MODEL?.trim() || "gemini-2.5-flash";
 
 const SYSTEM_PROMPT = `Kamu adalah "Herbal AI" dari Pojok Herbal Pintar — asisten herbal ahli.
 
