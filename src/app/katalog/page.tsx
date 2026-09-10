@@ -3,20 +3,80 @@
 import { useState, useMemo } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-import { Search, Leaf, Heart, AlertTriangle, BookOpen, X, ArrowRight, Sparkles } from "lucide-react";
+import { Search, Leaf, Heart, AlertTriangle, X, ArrowRight, Sparkles } from "lucide-react";
 import Link from "next/link";
 import jamuData from "@/data/jamu.json";
+import { useModalBehavior } from "@/hooks/useModalBehavior";
 type JamuItem = (typeof jamuData)[number];
-const categories = ["Semua", "Teh Herbal", "Wedang", "Jamu"];
+const categories = ["Semua"];
+
+function splitListItems(items: string[]) {
+  return items.flatMap((item) =>
+    item
+      .split(",")
+      .map((part) => part.trim())
+      .filter(Boolean),
+  );
+}
+
+function splitBenefitItems(items: string[]) {
+  return splitListItems(items).flatMap((item) => {
+    if (/meringankan dan mengobati/i.test(item)) {
+      return [item];
+    }
+
+    return item
+      .split(/\s+dan\s+/i)
+      .map((part) => part.trim())
+      .filter(Boolean);
+  });
+}
+
+function DetailList({
+  items,
+  tone,
+}: {
+  items: string[];
+  tone: "benefit" | "indication";
+}) {
+  const isBenefit = tone === "benefit";
+  const separatedItems = isBenefit
+    ? splitBenefitItems(items)
+    : splitListItems(items);
+
+  return (
+    <div className="space-y-2.5">
+      {separatedItems.map((item, index) => (
+        <div
+          key={`${tone}-${item}-${index}`}
+          className="flex items-start gap-3 rounded-xl border border-border/80 bg-white/70 p-3 text-sm leading-relaxed text-text-secondary"
+        >
+          <span
+            className={`mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-xs font-bold ${
+              isBenefit
+                ? "bg-warm/10 text-warm"
+                : "bg-emerald/10 text-emerald"
+            }`}
+          >
+            {index + 1}
+          </span>
+          <span>{item}</span>
+        </div>
+      ))}
+    </div>
+  );
+}
 
 export default function KatalogPage() {
   const [search, setSearch] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("Semua");
   const [selectedJamu, setSelectedJamu] = useState<JamuItem | null>(null);
 
+  useModalBehavior(!!selectedJamu, () => setSelectedJamu(null));
+
   const filteredJamu = useMemo(() => {
     return jamuData.filter((item) => {
-      const matchSearch = item.nama.toLowerCase().includes(search.toLowerCase()) || item.manfaat.some((m) => m.toLowerCase().includes(search.toLowerCase()));
+      const matchSearch = item.nama.toLowerCase().includes(search.toLowerCase()) || item.nama_latin.toLowerCase().includes(search.toLowerCase()) || item.manfaat.some((m) => m.toLowerCase().includes(search.toLowerCase())) || item.komposisi.some((k) => k.toLowerCase().includes(search.toLowerCase()));
       const matchCategory = selectedCategory === "Semua" || item.kategori === selectedCategory;
       return matchSearch && matchCategory && item.tersedia;
     });
@@ -31,6 +91,14 @@ export default function KatalogPage() {
           </span>
           <h1 className="text-3xl md:text-5xl font-black text-text mb-4">Jelajahi <span className="gradient-text">Herbal Indonesia</span></h1>
           <p className="text-text-secondary max-w-xl mx-auto">Informasi lengkap herbal berdasarkan panduan resmi Kemenkes RI.</p>
+          <div className="mt-4 sm:mt-6 mx-auto max-w-2xl rounded-2xl border border-border bg-white/50 px-3 py-2.5 sm:px-5 sm:py-4 text-xs leading-relaxed text-text-muted backdrop-blur-sm">
+            <div className="flex items-start gap-2">
+              <AlertTriangle className="mt-0.5 h-3.5 w-3.5 shrink-0 text-text-muted" />
+              <p className="text-xs sm:text-sm">
+                <span className="font-semibold text-text">Disclaimer medis:</span> Seluruh data literatur di bawah merupakan studi ilmiah umum untuk tujuan edukasi. Konsumsi herbal sebagai terapi pendamping wajib dikonsultasikan terlebih dahulu dengan dokter atau apoteker, terutama bagi pasien dengan obat rutin.
+              </p>
+            </div>
+          </div>
         </motion.div>
 
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} className="mb-10">
@@ -47,25 +115,38 @@ export default function KatalogPage() {
           </div>
         </motion.div>
 
-        <div className="mb-6 text-sm text-text-muted">Menampilkan {filteredJamu.length} dari {jamuData.filter(j => j.tersedia).length} herbal</div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           <AnimatePresence mode="popLayout">
             {filteredJamu.map((item, index) => (
               <motion.div key={item.id} layout initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0, scale: 0.95 }} transition={{ delay: index * 0.05 }} whileHover={{ y: -6 }} onClick={() => setSelectedJamu(item)} className="glass-card rounded-2xl overflow-hidden cursor-pointer group">
                 <div className="h-40 relative overflow-hidden" style={{ background: `linear-gradient(135deg, ${item.warna_tema}20, ${item.warna_tema}45)` }}>
-                  <Image src={item.gambar} alt={item.nama} fill className="object-cover group-hover:scale-110 transition-transform duration-500" />
+                  <Image src={item.gambar} alt={item.nama} fill className="object-cover group-hover:scale-110 transition-transform duration-500" onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }} />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
-                  <div className="absolute top-3 right-3"><span className="px-3 py-1 bg-white/80 backdrop-blur-sm rounded-full text-xs font-medium text-primary border border-primary/10 shadow-sm">{item.kategori}</span></div>
-                  <div className="absolute bottom-3 left-3 right-3"><h3 className="text-xl font-bold text-white" style={{ textShadow: "0 1px 3px rgba(0,0,0,0.6), 0 0 8px rgba(0,0,0,0.3)" }}>{item.nama}</h3></div>
+
+                  <div className="absolute bottom-2 sm:bottom-3 left-2 sm:left-3 right-2 sm:right-3"><h3 className="text-sm sm:text-xl font-bold text-white leading-tight" style={{ textShadow: "0 1px 3px rgba(0,0,0,0.6), 0 0 8px rgba(0,0,0,0.3)" }}>{item.nama}</h3></div>
                 </div>
-                <div className="p-5">
-                  <p className="text-xs text-text-muted italic mb-3">{item.nama_latin}</p>
-                  <div className="space-y-2 mb-4">
-                    {item.manfaat.slice(0, 3).map((m) => (<div key={m} className="flex items-start gap-2 text-sm text-text-secondary"><Heart className="w-3.5 h-3.5 text-warm mt-0.5 flex-shrink-0" />{m}</div>))}
+                <div className="p-4 sm:p-5">
+                  <p className="text-xs text-text-muted italic mb-2 sm:mb-3">{item.nama_latin}</p>
+                  <div className="mb-3 sm:mb-4">
+                    <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-text-muted">
+                      Manfaat utama
+                    </p>
+                    <div className="space-y-1.5">
+                      {splitBenefitItems(item.manfaat)
+                        .slice(0, 3)
+                        .map((m, benefitIndex) => (
+                        <div
+                          key={`${item.id}-benefit-${benefitIndex}`}
+                          className="flex items-start gap-2 text-xs sm:text-sm leading-relaxed text-text-secondary"
+                        >
+                          <Heart className="mt-0.5 h-3 w-3 shrink-0 text-warm sm:h-3.5 sm:w-3.5" />
+                          <span>{m}</span>
+                        </div>
+                        ))}
+                    </div>
                   </div>
-                  <div className="flex items-center justify-between pt-3 border-t border-border">
-                    <span className="text-xs text-primary font-medium bg-primary/5 px-2.5 py-1 rounded-md">{item.dosis}</span>
+                  <div className="flex items-center justify-center pt-2 sm:pt-3 border-t border-border">
                     <span className="text-xs text-primary font-medium flex items-center gap-1 group-hover:gap-2 transition-all">Lihat Detail <ArrowRight className="w-3 h-3" /></span>
                   </div>
                 </div>
@@ -87,24 +168,37 @@ export default function KatalogPage() {
       <AnimatePresence>
         {selectedJamu && (
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/30 backdrop-blur-md" onClick={() => setSelectedJamu(null)}>
-            <motion.div initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0, scale: 0.95 }} onClick={(e) => e.stopPropagation()} className="w-full max-w-2xl max-h-[90vh] overflow-y-auto bg-white/95 backdrop-blur-xl rounded-2xl shadow-2xl border border-border">
-              <div className="h-32 relative" style={{ background: `linear-gradient(135deg, ${selectedJamu.warna_tema}35, ${selectedJamu.warna_tema}65)` }}>
-                <button onClick={() => setSelectedJamu(null)} className="absolute top-4 right-4 w-9 h-9 bg-white/80 backdrop-blur-sm rounded-full flex items-center justify-center text-text border border-border shadow-sm z-10"><X className="w-4 h-4" /></button>
-                <div className="absolute -bottom-6 left-6 z-10"><div className="w-14 h-14 rounded-xl overflow-hidden shadow-lg border-2 border-white"><Image src={selectedJamu.gambar} alt={selectedJamu.nama} width={56} height={56} className="w-full h-full object-cover" /></div></div>
-              </div>
-              <div className="p-6 pt-10">
-                <div className="flex items-center gap-3 mb-1">
-                  <h2 className="text-2xl font-bold text-text">{selectedJamu.nama}</h2>
-                  <span className="px-3 py-1 bg-primary/10 text-primary text-xs font-medium rounded-full">{selectedJamu.kategori}</span>
+            <motion.div initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0, scale: 0.95 }} onClick={(e) => e.stopPropagation()} className="w-full max-w-2xl max-h-[calc(100dvh-2rem)] overflow-y-auto overscroll-contain bg-white/95 backdrop-blur-xl rounded-2xl shadow-2xl border border-border">
+              <div className="h-40 relative overflow-hidden" style={{ background: `linear-gradient(135deg, ${selectedJamu.warna_tema}35, ${selectedJamu.warna_tema}65)` }}>
+                <Image src={selectedJamu.gambar} alt={selectedJamu.nama} fill className="object-cover" onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }} />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+                <div className="absolute bottom-3 sm:bottom-4 left-3 sm:left-6 right-3 sm:right-16">
+                  <h2 className="text-xl sm:text-2xl font-bold text-white" style={{ textShadow: '0 1px 3px rgba(0,0,0,0.6)' }}>{selectedJamu.nama}</h2>
+                  <p className="text-xs sm:text-sm text-white/80 italic">{selectedJamu.nama_latin}</p>
                 </div>
-                <p className="text-sm text-text-muted italic mb-6">{selectedJamu.nama_latin}</p>
-                <div className="mb-6"><h3 className="font-semibold text-text flex items-center gap-2 mb-3"><Heart className="w-4 h-4 text-warm" /> Manfaat</h3><div className="grid grid-cols-2 gap-2">{selectedJamu.manfaat.map((m) => (<div key={m} className="flex items-start gap-2 p-2.5 bg-bg rounded-lg text-sm text-text-secondary border border-border"><Heart className="w-3 h-3 text-warm mt-0.5 flex-shrink-0" />{m}</div>))}</div></div>
-                <div className="mb-6"><h3 className="font-semibold text-text flex items-center gap-2 mb-3"><Leaf className="w-4 h-4 text-primary" /> Komposisi</h3><div className="flex flex-wrap gap-2">{selectedJamu.komposisi.map((k) => (<span key={k} className="px-3 py-1.5 bg-bg rounded-lg text-sm text-text-secondary border border-border">{k}</span>))}</div></div>
-                <div className="mb-6"><h3 className="font-semibold text-text flex items-center gap-2 mb-3"><BookOpen className="w-4 h-4 text-warm" /> Cara Pembuatan</h3><p className="text-sm text-text-secondary bg-bg p-4 rounded-lg leading-relaxed border border-border">{selectedJamu.cara_pembuatan}</p></div>
-                <div className="mb-6 p-4 bg-primary/5 rounded-lg border border-primary/15"><h3 className="font-semibold text-primary flex items-center gap-2 mb-1"><AlertTriangle className="w-4 h-4" /> Dosis Aman</h3><p className="text-sm text-text font-medium">{selectedJamu.dosis}</p></div>
-                <div className="mb-6"><h3 className="font-semibold text-text mb-3">Indikasi Medis</h3><div className="space-y-2">{selectedJamu.indikasi.map((ind) => (<div key={ind} className="flex items-center gap-2 text-sm text-text-secondary"><div className="w-1.5 h-1.5 bg-emerald rounded-full flex-shrink-0" />{ind}</div>))}</div></div>
-                <div className="mb-6 p-4 bg-warm/5 rounded-lg border border-warm/15"><h3 className="font-semibold text-warm flex items-center gap-2 mb-2"><AlertTriangle className="w-4 h-4" /> Kontraindikasi</h3><div className="space-y-1">{selectedJamu.kontraindikasi.map((k) => (<div key={k} className="flex items-center gap-2 text-sm text-warm"><div className="w-1.5 h-1.5 bg-warm/50 rounded-full flex-shrink-0" />{k}</div>))}</div></div>
-                <p className="text-xs text-text-muted italic">Sumber: {selectedJamu.sumber}</p>
+                <button onClick={() => setSelectedJamu(null)} className="absolute top-3 sm:top-4 right-3 sm:right-4 w-8 h-8 sm:w-9 sm:h-9 bg-white/80 backdrop-blur-sm rounded-full flex items-center justify-center text-text border border-border shadow-sm z-10"><X className="w-4 h-4" /></button>
+              </div>
+              <div className="p-4 sm:p-6">
+                <div className="flex items-center gap-3 mb-1">
+                  <h2 className="text-xl sm:text-2xl font-bold text-text">{selectedJamu.nama}</h2>
+                </div>
+                <p className="text-sm text-text-muted italic mb-4 sm:mb-6">{selectedJamu.nama_latin}</p>
+                <div className="mb-5 rounded-2xl border border-warm/20 bg-warm/[0.04] p-4 sm:mb-6 sm:p-5">
+                  <div className="mb-3 flex items-center gap-2">
+                    <Heart className="h-4 w-4 text-warm" />
+                    <div>
+                      <h3 className="font-semibold text-text">Manfaat</h3>
+                      <p className="text-xs text-text-muted">Kegunaan umum yang tercatat pada data herbal</p>
+                    </div>
+                  </div>
+                  <DetailList items={selectedJamu.manfaat} tone="benefit" />
+                </div>
+
+                {selectedJamu.sumber_foto && (
+                  <p className="text-xs text-text-muted italic">
+                    Sumber foto: {selectedJamu.sumber_foto}
+                  </p>
+                )}
               </div>
             </motion.div>
           </motion.div>

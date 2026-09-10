@@ -8,24 +8,50 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        bg: "var(--bg)",
+        surface: {
+          DEFAULT: "var(--surface-solid)",
+          hover: "var(--surface-hover)",
+        },
+        border: "var(--border)",
+        text: {
+          DEFAULT: "var(--text)",
+          secondary: "var(--text-secondary)",
+          muted: "var(--text-muted)",
+        },
         primary: {
-          DEFAULT: "#2d6a4f",
-          light: "#40916c",
-          dark: "#1b4332",
+          DEFAULT: "var(--primary)",
+          light: "var(--primary-light)",
+          dark: "var(--primary-dark)",
         },
         accent: {
-          DEFAULT: "#b7791f",
-          light: "#d69e2e",
+          DEFAULT: "var(--accent)",
+          light: "var(--accent-light)",
+        },
+        warm: {
+          DEFAULT: "var(--warm)",
+          light: "var(--warm-light)",
+        },
+        rose: {
+          DEFAULT: "var(--rose)",
+          light: "var(--rose-light)",
         },
         emerald: {
-          DEFAULT: "#059669",
-          light: "#34d399",
+          DEFAULT: "var(--emerald)",
+          light: "var(--emerald-light)",
         },
-        moss: "#4d7c0f",
-        earth: "#78350f",
+        earth: {
+          DEFAULT: "var(--earth)",
+          light: "var(--earth-light)",
+        },
+        moss: {
+          DEFAULT: "var(--moss)",
+          light: "var(--moss-light)",
+        },
+        sky: "var(--sky)",
       },
       fontFamily: {
-        sans: ["Inter", "system-ui", "sans-serif"],
+        sans: ["var(--font-sans)", "Inter", "system-ui", "sans-serif"],
       },
     },
   },

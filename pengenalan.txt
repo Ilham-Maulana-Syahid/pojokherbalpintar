@@ -1,0 +1,212 @@
+═══════════════════════════════════════════════════════════════════
+          PENGENALAN WEBSITE "POJOK HERBAL PINTAR"
+                    Tim HerbaTech
+           Universitas Diponegoro, Semarang
+═══════════════════════════════════════════════════════════════════
+
+
+┌─────────────────────────────────────────────────────────────────┐
+│ 1. PENGENALAN WEBSITE                                           │
+└─────────────────────────────────────────────────────────────────┘
+
+Pojok Herbal Pintar adalah platform edukasi kesehatan herbal berbasis
+web yang menghubungkan kekayaan pengobatan tradisional Indonesia
+(jamu dan wedang tradisional) dengan teknologi modern.
+
+Website ini dibangun oleh Tim HerbaTech — mahasiswa Universitas
+Diponegoro dari Prodi Farmasi dan Prodi Informatika — dengan tujuan
+mendorong kemandirian kesehatan masyarakat melalui edukasi herbal
+yang berbasis sains, mengacu pada panduan resmi Kemenkes RI dan
+penelitian ilmiah.
+
+FITUR UTAMA:
+
+  1. Katalog Herbal
+     Berisi 56 tanaman herbal dan jamu dengan informasi lengkap:
+     nama latin, manfaat, kandungan, komposisi, cara pembuatan,
+     dosis, indikasi, hingga sumber referensi. Dilengkapi filter
+     kategori dan pencarian.
+
+  2. Peta Herbal Interaktif Indonesia
+     Peta SVG interaktif provinsi Indonesia — pengunjung dapat
+     mengeklik provinsi untuk melihat herbal khas daerah tersebut.
+
+  3. Resep Herbal
+     Kumpulan resep wedang dan jamu tradisional lengkap dengan
+     bahan, langkah pembuatan, serta manfaatnya.
+
+  4. Tanya Herbal AI
+     Konsultasi gratis 24/7 dengan asisten AI yang menjawab
+     pertanyaan seputar herbal, jamu, dan kesehatan secara
+     interaktif seperti berchatting.
+
+  5. Infografis Herbal
+     Visualisasi informasi herbal dalam bentuk infografis yang
+     mudah dipahami.
+
+  6. PWA (Progressive Web App)
+     Website dapat di-install seperti aplikasi di HP, dan konten
+     yang sudah dibuka tetap dapat diakses saat offline.
+
+TEKNOLOGI:
+  - Next.js 14 (React) + TypeScript
+  - Tailwind CSS
+  - Google Gemini AI
+  - Progressive Web App (Service Worker + Manifest)
+  - Framer Motion untuk animasi
+
+VISI:
+  Menjadi platform edukasi herbal yang menghubungkan pengobatan
+  tradisional Indonesia dengan teknologi modern.
+
+MISI:
+  1. Edukasi herbal melalui Puskesmas dan Posyandu.
+  2. Teknologi AI untuk akses informasi herbal seluruh masyarakat.
+
+
+┌─────────────────────────────────────────────────────────────────┐
+│ 2. KELEBIHAN WEBSITE                                            │
+└─────────────────────────────────────────────────────────────────┘
+
+  1. GRATIS DAN TANPA REGISTRASI
+     Tidak perlu membuat akun, tidak perlu login. Buka website,
+     langsung bisa gunakan semua fitur.
+
+  2. DATA HERBAL LENGKAP DAN TERSTRUKTUR
+     56 herbal dengan 16 kategori informasi per herbal (manfaat,
+     kandungan, dosis, indikasi, dll.) — tidak sekadar nama dan
+     gambar, dan mencantumkan sumber referensi.
+
+  3. ASISTEN AI 24/7
+     Pengunjung bisa bertanya kapan saja dalam bahasa sehari-hari,
+     jawaban interaktif dan personal, tidak kaku seperti membaca
+     artikel.
+
+  4. BISA DI-INSTALL SEPERTI APLIKASI (PWA)
+     Di HP, website bisa di-add to home screen dan dibuka seperti
+     aplikasi biasa, termasuk akses offline untuk konten yang sudah
+     pernah dibuka.
+
+  5. RESPONSIF DI SEMUA PERANGKAT
+     Tampilan menyesuaikan desktop, tablet, dan smartphone —
+     termasuk navigasi bawah khusus mobile dan dukungan layar
+     iPhone (safe area).
+
+  6. PETA INTERAKTIF UNIK
+     Herbal per provinsi dalam peta Indonesia — cara belajar yang
+     visual dan menarik, jarang ada di website herbal lain.
+
+  7. CEPAT DAN RINGAN
+     Halaman di-generate secara statis sehingga loading cepat,
+     hemat kuota.
+
+  8. AMAN
+     Input pengguna divalidasi di server, output AI di-filter dari
+     celah XSS (serangan skrip berbahaya).
+
+  9. INFORMASI BERBASIS SUMBER
+     Setiap herbal mencantumkan sumber — mendukung edukasi yang
+     kredibel, bukan mitos yang menyebar di media sosial.
+
+
+┌─────────────────────────────────────────────────────────────────┐
+│ 3. KEKURANGAN WEBSITE                                           │
+└─────────────────────────────────────────────────────────────────┘
+
+  1. FITUR AI BUTUH KONEKSI INTERNET
+     Konten herbal bisa diakses offline lewat PWA, tetapi Tanya
+     Herbal AI tidak bisa berjalan tanpa internet.
+
+  2. JUMLAH DATA MASIH TERBATAS
+     Baru 56 herbal yang dibahas. Pengembangan konten masih dilakukan
+     secara manual oleh tim, belum ada sistem admin untuk menambah
+     data.
+
+  3. TIDAK ADA AKUN PENGGUNA
+     Karena tanpa login, riwayat chat AI tidak bisa disimpan antar
+     perangkat — chat hilang jika halaman ditutup.
+
+  4. HANYA BAHASA INDONESIA
+     Belum tersedia pilihan bahasa lain (misalnya Inggris) untuk
+     menjangkau audiens internasional.
+
+  5. BUKAN PENGGANTI KONSULTASI MEDIS
+     Semua informasi bersifat edukasi. Website tidak bisa menggantikan
+     pemeriksaan dokter/apoteker, dan tidak memberikan diagnosis
+     penyakit.
+
+  6. PENCARIAN MASIH SEDERHANA
+     Pencarian dan filter berjalan di sisi perangkat pengunjung —
+     cukup untuk 56 herbal, namun jika data bertambah banyak perlu
+     sistem pencarian yang lebih canggih.
+
+  7. BARU MENJANGKAU PENGGUNA YANG MELEK DIGITAL
+     Masyarakat yang belum terbiasa menggunakan internet/teknologi
+     digital masih membutuhkan pendampingan (misalnya lewat
+     kader Posyandu).
+
+
+┌─────────────────────────────────────────────────────────────────┐
+│ 4. SIAPA SAJA YANG BISA MENGAKSES                               │
+└─────────────────────────────────────────────────────────────────┘
+
+  Website ini BERSIFAT PUBLIK dan TERBUKA UNTUK UMUM:
+
+  ✓ Tidak perlu login, registrasi, atau bayar
+  ✓ Tidak ada batasan usia — semua kalangan bisa mengakses
+  ✓ Bisa diakses dari seluruh Indonesia (dan luar negeri) asalkan
+    terhubung internet
+  ✓ Mendukung semua perangkat: smartphone (Android/iOS), tablet,
+    laptop, dan komputer desktop
+  ✓ Mendukung browser modern: Chrome, Safari, Firefox, Edge
+
+  Cukup buka alamat website melalui browser, dan seluruh fitur
+  (katalog, peta, resep, infografis, dan Tanya Herbal AI) langsung
+  dapat digunakan secara gratis.
+
+
+┌─────────────────────────────────────────────────────────────────┐
+│ 5. KEPADA SIAPA (TARGET PENGGUNA)                               │
+└─────────────────────────────────────────────────────────────────┘
+
+  1. MASYARAKAT UMUM
+     Siapa pun yang ingin memulai hidup sehat secara alami dan
+     memanfaatkan herbal sebagai upaya promotif-preventif (menjaga
+     kesehatan agar tidak sakit).
+
+  2. IBU RUMAH TANGGA DAN KELUARGA
+     Pembuat utama jamu/wedang tradisional di rumah — mendapatkan
+     resep yang benar, dosis yang aman, dan informasi kandungan.
+
+  3. KADER POSYANDU DAN TENAGA KESEHATAN PUSKESMAS
+     Sesuai misi program: website ini dirancang mendukung edukasi
+     herbal di Posyandu dan Puskesmas sebagai bahan penyuluhan.
+
+  4. LANSIA
+     Generasi yang akrab dengan jamu tradisional, kini bisa mengakses
+     informasinya dengan cara yang lebih mudah dan aman dosisnya.
+
+  5. MAHASISWA DAN PELAJAR
+     Khususnya mahasiswa Farmasi, Kesehatan Masyarakat, dan Ilmu
+     Gizi — sebagai referensi belajar herbal berbasis sumber.
+
+  6. KOMUNITAS HERBAL DAN PENGGIAT JAMU
+     Komunitas jamu tradisional yang ingin memperkaya referensi
+     resep dan khasiat herbal daerah.
+
+  7. GENERASI MUDA / ANAK MILLENIAL-GEN Z
+     Pengguna teknologi yang mencari informasi kesehatan lewat
+     internet — dijangkau lewat asisten AI dan tampilan modern.
+
+
+  ─────────────────────────────────────────────────────────────
+  CATATAN PENTING:
+  Seluruh informasi di website ini bersifat edukasi umum dan
+  tidak menggantikan konsultasi dengan dokter, apoteker, atau
+  tenaga kesehatan profesional.
+  ─────────────────────────────────────────────────────────────
+
+═══════════════════════════════════════════════════════════════════
+            Dokumen Pengenalan — Tim HerbaTech
+            Pojok Herbal Pintar © 2026
+═══════════════════════════════════════════════════════════════════

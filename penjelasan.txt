@@ -1,0 +1,549 @@
+PENJELASAN LENGKAP WEBSITE
+POJOK HERBAL PINTAR
+================================
+
+Dokumen ini adalah panduan presentasi dan live demo website Pojok Herbal
+Pintar. Website ini merupakan platform edukasi herbal Indonesia yang
+menggabungkan katalog herbal, resep herbal, peta herbal interaktif, dan
+konsultasi Herbal AI.
+
+1. IDENTITAS DAN TUJUAN
+-----------------------
+
+Tujuan website:
+- Memberikan edukasi tentang tanaman herbal Indonesia.
+- Menampilkan manfaat, kandungan, bagian tanaman, cara pembuatan, keamanan,
+  dosis, dan sumber foto.
+- Membantu pengguna menemukan herbal berdasarkan provinsi.
+- Menyediakan asisten AI untuk pertanyaan seputar herbal dan jamu.
+- Mendukung edukasi kesehatan masyarakat di Posyandu dan Puskesmas.
+
+Sasaran pengguna:
+- Masyarakat umum.
+- Kader Posyandu dan Puskesmas.
+- Pelajar dan mahasiswa.
+- Pengguna yang ingin mengenal jamu dan tanaman obat Indonesia.
+
+Catatan: website ini bersifat edukatif dan bukan pengganti diagnosis,
+resep, atau konsultasi langsung dengan dokter dan apoteker.
+
+2. TEKNOLOGI
+------------
+
+- Next.js 14 dengan App Router.
+- React 18 dan TypeScript.
+- Tailwind CSS.
+- Framer Motion untuk animasi.
+- Lucide React untuk ikon.
+- Google Gemini melalui @google/generative-ai.
+- SVG untuk peta Indonesia.
+- JSON sebagai data utama herbal.
+- Service worker untuk cache dan pengalaman offline dasar.
+
+Perintah utama:
+- npm run dev       Menjalankan mode pengembangan.
+- npm run lint      Memeriksa aturan linting.
+- npx tsc --noEmit  Memeriksa TypeScript.
+- npm run build     Membuat build production.
+- npm start         Menjalankan build production.
+
+3. LIVE DEMO BERANDA (/)
+------------------------
+
+Beranda menampilkan:
+- Logo Pojok Herbal Pintar.
+- Judul dan tujuan platform.
+- Tombol "Jelajahi Herbal".
+- Tombol "Tanya Herbal AI".
+- Animasi latar belakang, partikel, dan daun.
+- Bagian fitur unggulan.
+- Peta Herbal Indonesia.
+- Bagian cara kerja platform.
+- Tombol ajakan membuka katalog atau Herbal AI.
+
+Alur demo:
+1. Buka halaman utama.
+2. Klik "Jelajahi Herbal" untuk menuju katalog.
+3. Klik "Tanya Herbal AI" untuk membuka konsultasi AI.
+4. Scroll ke "Peta Herbal Indonesia".
+5. Klik marker peta untuk melihat herbal berdasarkan provinsi.
+
+Fitur unggulan:
+- Katalog Herbal Lengkap.
+- Herbal AI Assistant.
+- Resep Herbal Aman.
+- Edukasi Gratis.
+
+4. KATALOG HERBAL (/katalog)
+----------------------------
+
+Katalog digunakan untuk mencari dan membaca detail herbal.
+
+Fitur:
+- Pencarian nama herbal, nama latin, manfaat, atau bagian tanaman.
+- Kartu foto herbal.
+- Nama dan nama latin.
+- Manfaat utama.
+- Modal detail.
+- Sumber foto.
+- Disclaimer medis.
+
+Detail yang tersedia:
+- Nama herbal dan nama latin.
+- Manfaat.
+- Bagian tanaman yang digunakan.
+- Kandungan.
+- Cara pembuatan.
+- Dosis dan keamanan.
+- Sumber foto.
+
+Aturan manfaat:
+- Manfaat hanya ditampilkan di Katalog Herbal.
+- Teks yang berisi beberapa manfaat dapat dipisah menjadi beberapa poin jika
+  pemisahnya jelas.
+- Frasa yang harus tetap satu makna tidak dipisah secara sembarangan.
+
+Indikasi medis:
+- Bagian "Indikasi Medis" sudah dihapus dari tampilan katalog karena sumber
+  data tidak menyediakan indikasi medis terpisah secara konsisten.
+- Website tidak membuat atau mengarang informasi indikasi medis baru.
+
+Alur demo:
+1. Buka menu "Katalog Herbal".
+2. Cari "Kunyit", "Mengkudu", atau "Pala".
+3. Klik kartu herbal.
+4. Tunjukkan manfaat dalam poin yang rapi.
+5. Tunjukkan bagian tanaman, kandungan, cara pembuatan, dosis, dan sumber foto.
+6. Tutup modal dengan tombol X atau area di luar modal.
+
+5. RESEP HERBAL (/resep)
+------------------------
+
+Halaman Resep Herbal berfokus pada pengolahan herbal, bukan daftar manfaat.
+
+Yang ditampilkan:
+- Foto herbal.
+- Nama dan nama latin.
+- Jumlah bagian tanaman.
+- Bagian tanaman yang digunakan.
+- Kandungan.
+- Cara membuat.
+- Keamanan, dosis, dan interaksi.
+- Tombol detail.
+- Tombol cetak resep.
+- Sumber foto.
+
+Manfaat tidak ditampilkan di halaman resep. Manfaat hanya ada di katalog.
+
+Kandungan:
+- Kandungan yang dipisahkan koma dapat menjadi item bernomor.
+- Koma pada angka atau nama senyawa, seperti "1,8-cineole", tidak dipotong.
+- Frasa dengan kata "atau" dipertahankan sebagai satu item.
+
+Cara pembuatan:
+- Ditampilkan sebagai tahapan pengolahan.
+- Instruksi konsumsi seperti "minum 2x sehari", "minum sebelum makan",
+  atau "1 gelas per hari" tidak termasuk cara pembuatan.
+- Informasi konsumsi tetap berada pada bagian dosis.
+
+Cetak resep:
+1. Klik ikon printer pada kartu atau modal.
+2. Browser membuka halaman cetak.
+3. Pilih printer atau simpan sebagai PDF.
+
+Alur demo:
+1. Buka "Resep Herbal".
+2. Cari "Kunyit" atau "Jahe".
+3. Tunjukkan kandungan dalam nomor terpisah.
+4. Tunjukkan cara pembuatan sebagai langkah pengolahan.
+5. Tunjukkan bahwa manfaat tidak tampil di resep.
+6. Klik printer untuk mencoba mencetak.
+
+6. PETA HERBAL INDONESIA
+------------------------
+
+Peta berada di halaman beranda dan menggunakan aset SVG Indonesia.
+
+Fungsi:
+- Menampilkan wilayah Indonesia.
+- Menampilkan marker wilayah yang memiliki data herbal.
+- Marker dapat diklik.
+- Panel atau tooltip menampilkan provinsi dan herbal terkait.
+- Peta menyesuaikan ukuran layar.
+
+File terkait:
+- src/components/HerbalMap.tsx
+- public/maps/indonesia.svg
+
+Alur demo:
+1. Scroll ke bagian peta.
+2. Klik marker salah satu wilayah.
+3. Tunjukkan nama provinsi dan herbal yang muncul.
+4. Klik marker wilayah lain.
+5. Uji pada desktop dan mobile.
+
+7. HERBAL AI (/ai)
+------------------
+
+Herbal AI adalah fitur konsultasi berbasis Gemini LLM.
+
+Fungsi:
+- Menjawab pertanyaan tentang herbal, jamu, wedang, dan tanaman obat.
+- Menjelaskan manfaat, cara membuat, dan dosis umum.
+- Menggunakan bahasa Indonesia.
+- Menampilkan contoh pertanyaan cepat.
+- Menyalin jawaban.
+- Mereset percakapan.
+- Menampilkan loading dan pesan error.
+
+Contoh pertanyaan:
+- Apa manfaat teh daun kelor?
+- Bagaimana cara membuat wedang jahe?
+- Herbal apa untuk masuk angin?
+- Jelaskan jamu kunyit asam.
+- Dosis aman beras kencur?
+- Apa manfaat wedang uwuh?
+
+Alur teknis:
+1. Pengguna mengetik pertanyaan.
+2. Halaman AI mengirim data ke /api/chat.
+3. API server membaca GEMINI_API_KEY.
+4. API memanggil model Gemini.
+5. Jawaban dikembalikan dan ditampilkan.
+
+Environment variable:
+
+GEMINI_API_KEY=API_KEY_GEMINI
+
+Tambahkan variabel tersebut di .env.local untuk lokal dan di Vercel
+Environment Variables untuk deployment. Jangan memasukkan API key ke kode,
+GitHub, screenshot, atau dokumen publik.
+
+Catatan: Herbal AI adalah alat edukasi dan bukan pengganti dokter atau
+apoteker.
+
+8. TENTANG KAMI (/tentang)
+--------------------------
+
+Halaman ini berisi:
+- Identitas tim mahasiswa Universitas Diponegoro.
+- Logo universitas.
+- Foto anggota tim dan program studi.
+- Nilai utama proyek.
+- Visi dan misi.
+- Tombol menuju katalog dan Herbal AI.
+
+Nilai proyek:
+- Berbasis sains.
+- Untuk masyarakat.
+- Mendukung kemandirian kesehatan.
+- Menggunakan inovasi digital.
+
+Visi:
+Menjadi platform edukasi herbal yang menghubungkan pengobatan tradisional
+Indonesia dengan teknologi modern.
+
+Misi:
+- Memberikan edukasi herbal melalui Posyandu dan Puskesmas.
+- Menggunakan AI untuk memperluas akses informasi herbal.
+
+9. NAVIGASI RESPONSIVE
+----------------------
+
+Desktop:
+- Navbar berada di bagian atas.
+- Logo tampil di navbar.
+- Menu utama tampil horizontal.
+- Tombol Tanya Herbal AI tersedia.
+
+Mobile:
+- Navbar berubah menjadi navigasi tetap di bagian bawah.
+- Menu berisi Beranda, Katalog, Resep, Herbal AI, dan Tentang Kami.
+- Logo dipindahkan ke pojok kiri atas hero beranda.
+- Konten memiliki ruang bawah agar tidak tertutup navbar.
+
+10. DATA HERBAL
+---------------
+
+File data runtime:
+
+src/data/jamu.json
+
+Jumlah data saat ini:
+- 56 herbal.
+
+Field data:
+- id
+- nama
+- nama_latin
+- kategori
+- gambar
+- warna_tema
+- manfaat
+- komposisi
+- kandungan
+- cara_pembuatan
+- dosis
+- indikasi
+- sumber
+- sumber_foto
+- tersedia
+- provinsi
+
+Aturan data:
+- komposisi ditampilkan sebagai "Bagian tanaman yang digunakan".
+- kandungan berisi senyawa atau zat aktif.
+- manfaat hanya digunakan pada katalog.
+- sumber_foto digunakan untuk sumber gambar.
+- sumber tetap ada di data, tetapi tidak ditampilkan sebagai "Sumber data".
+- Kratom sudah dihapus.
+- Semua herbal memiliki sumber foto.
+
+File tambahan:
+- DATA_POJOK_HERBAL.csv
+- public/images/sumber gambar.txt
+
+Jika mengedit kandungan, manfaat, dosis, atau cara pembuatan, edit:
+
+src/data/jamu.json
+
+Pastikan format JSON tetap valid.
+
+11. GAMBAR DAN DEPLOYMENT
+-------------------------
+
+Lokasi gambar:
+
+public/images/
+
+Contoh path:
+- /images/kunyit.png
+- /images/mengkudu.png
+- /images/mengkudu-hutan.png
+- /images/keji-beling.png
+- /images/gandapura.png
+- /images/pala.png
+
+Penting:
+- Nama file harus sama persis dengan field gambar.
+- Vercel menggunakan Linux yang peka huruf besar-kecil.
+- "mengkudu.png" berbeda dengan "Mengkudu.png".
+- File harus berada di folder public.
+- Path harus diawali /images/.
+
+Jika gambar tidak muncul:
+1. Cek file di public/images.
+2. Cek ekstensi.
+3. Cek huruf besar-kecil.
+4. Cek field gambar di jamu.json.
+5. Pastikan file masuk commit dan deploy ulang.
+
+12. STRUKTUR KOMPONEN
+---------------------
+
+src/components/Navbar.tsx
+Mengatur navbar desktop dan navigasi bawah mobile.
+
+src/components/Footer.tsx
+Mengatur footer, navigasi, lokasi, dan email kontak. Nomor HP sudah dihapus.
+
+src/components/HeroSection.tsx
+Mengatur hero, fitur, peta, cara kerja, dan CTA beranda.
+
+src/components/HerbalMap.tsx
+Mengatur peta Indonesia interaktif.
+
+src/components/HerbalInfographic.tsx
+Komponen visualisasi atau infografik herbal.
+
+src/components/ServiceWorkerRegister.tsx
+Mendaftarkan service worker.
+
+src/app/katalog/page.tsx
+Halaman katalog dan detail manfaat.
+
+src/app/resep/page.tsx
+Halaman resep, detail resep, dan cetak resep.
+
+src/app/ai/page.tsx
+Antarmuka percakapan Herbal AI.
+
+src/app/api/chat/route.ts
+Endpoint server yang menghubungkan AI dengan Gemini.
+
+src/app/bahan-herbal/page.tsx
+Halaman sebaran atau ringkasan bahan herbal.
+
+src/app/tentang/page.tsx
+Halaman tim, nilai, visi, dan misi.
+
+src/app/globals.css
+Gaya global, warna, kartu, background, responsive layout, dan padding mobile.
+
+13. FOOTER DAN KONTAK
+---------------------
+
+Footer berisi:
+- Logo dan identitas Pojok Herbal Pintar.
+- Navigasi website.
+- Kategori informasi herbal.
+- Lokasi Universitas Diponegoro, Semarang.
+- Email pojokherbalpintar@gmail.com.
+- Ikon sosial atau website.
+- Hak cipta.
+
+Nomor HP sudah dihapus dari kontak.
+
+14. SERVICE WORKER DAN PWA
+-------------------------
+
+File terkait:
+- public/manifest.json
+- public/sw.js
+- src/components/ServiceWorkerRegister.tsx
+
+Fungsi:
+- Mendukung instalasi website sebagai aplikasi web.
+- Menyimpan aset tertentu dalam cache.
+- Membantu akses saat koneksi tidak stabil.
+
+Jika browser menampilkan versi lama setelah deploy:
+1. Buka DevTools.
+2. Pilih Application atau Storage.
+3. Hapus cache dan service worker lama.
+4. Lakukan hard reload.
+
+15. MENJALANKAN LOKAL
+---------------------
+
+Buka terminal di folder proyek:
+
+cd D:\herbiva\pojok-jamu-pintar
+
+Install dependency:
+
+npm install
+
+Buat atau periksa .env.local:
+
+GEMINI_API_KEY=API_KEY_GEMINI
+
+Jalankan development:
+
+npm run dev
+
+Buka:
+
+http://localhost:3000
+
+Simulasi production:
+
+npm run build
+npm start
+
+16. DEPLOY KE VERCEL
+--------------------
+
+1. Push project ke GitHub.
+2. Buka vercel.com.
+3. Pilih Add New Project.
+4. Pilih repository project.
+5. Pastikan Framework Preset adalah Next.js.
+6. Build Command: npm run build.
+7. Install Command: npm install.
+8. Tambahkan GEMINI_API_KEY pada Environment Variables.
+9. Aktifkan environment Production, Preview, dan Development sesuai kebutuhan.
+10. Klik Deploy.
+11. Uji route /, /katalog, /resep, /ai, dan /tentang.
+12. Uji gambar, pencarian, modal, peta, cetak resep, dan AI.
+
+Jangan mengunggah .env.local ke GitHub.
+
+17. CHECKLIST LIVE DEMO
+-----------------------
+
+[ ] Beranda dapat dibuka.
+[ ] Logo tampil di desktop dan mobile.
+[ ] Navbar desktop berada di atas.
+[ ] Navbar mobile berada di bawah.
+[ ] Animasi beranda tampil.
+[ ] Tombol katalog berfungsi.
+[ ] Tombol Herbal AI berfungsi.
+[ ] Peta Indonesia tampil.
+[ ] Marker peta dapat diklik.
+[ ] Pencarian katalog berfungsi.
+[ ] Modal katalog dapat dibuka dan ditutup.
+[ ] Manfaat hanya tampil di katalog.
+[ ] Indikasi medis tidak tampil di katalog.
+[ ] Manfaat tidak tampil di resep.
+[ ] Kandungan tampil terpisah dengan benar.
+[ ] Frasa dengan "atau" tetap satu item.
+[ ] Cara pembuatan hanya berisi pengolahan.
+[ ] Dosis dan frekuensi tidak masuk cara pembuatan.
+[ ] Tombol cetak resep berfungsi.
+[ ] Sumber foto tampil jika tersedia.
+[ ] Tidak ada gambar rusak.
+[ ] GEMINI_API_KEY sudah diatur di Vercel.
+[ ] Build Vercel berhasil.
+
+18. VALIDASI TEKNIS
+-------------------
+
+Jalankan:
+
+npm run lint
+npx tsc --noEmit
+npm run build
+
+Jika ketiganya berhasil:
+- Lint tidak menemukan masalah.
+- TypeScript tidak menemukan error.
+- Next.js berhasil membuat build production.
+
+Jika Vercel gagal:
+- Baca log build Vercel.
+- Pastikan build command adalah npm run build.
+- Pastikan semua file gambar masuk Git.
+- Pastikan huruf besar-kecil nama file sesuai.
+- Pastikan environment variable sudah diatur.
+- Pastikan deploy menggunakan commit terbaru.
+
+19. NASKAH PRESENTASI LIVE DEMO
+-------------------------------
+
+"Ini adalah Pojok Herbal Pintar, sebuah platform edukasi herbal Indonesia.
+Pada beranda, pengguna dapat melihat tujuan platform, fitur utama, dan peta
+herbal Indonesia. Melalui Katalog Herbal, pengguna dapat mencari tanaman
+seperti kunyit atau mengkudu dan membuka detail manfaat, bagian tanaman,
+kandungan, cara pembuatan, dosis, serta sumber foto.
+
+Pada halaman Resep Herbal, informasi difokuskan pada cara pengolahan.
+Kandungan ditampilkan dalam poin terpisah, sedangkan cara pembuatan ditampilkan
+sebagai tahapan. Informasi konsumsi dan frekuensi ditempatkan pada bagian dosis
+agar tidak tercampur dengan proses pembuatan.
+
+Website juga memiliki Herbal AI yang menggunakan Gemini untuk menjawab
+pertanyaan pengguna tentang jamu dan tanaman obat. Pengguna dapat mencoba
+pertanyaan cepat, menyalin jawaban, atau mereset percakapan. Semua informasi
+tetap perlu digunakan secara bijak dan bukan pengganti konsultasi dokter.
+
+Halaman Tentang Kami menjelaskan tim, visi, misi, dan nilai proyek. Website
+responsif untuk desktop dan mobile serta dapat dideploy ke Vercel dengan
+environment variable GEMINI_API_KEY."
+
+20. BATASAN KEAMANAN
+--------------------
+
+- Website bukan pengganti konsultasi medis.
+- Jangan membuat klaim medis baru tanpa sumber.
+- Jangan menyimpan API key di frontend atau repository.
+- Jangan membagikan API key melalui chat atau screenshot.
+- Jangan mengubah kandungan, dosis, atau keamanan tanpa memeriksa sumber.
+- Setelah mengubah data, jalankan lint, TypeScript, dan build.
+
+SELESAI
+=======
+
+File ini dapat digunakan sebagai naskah presentasi, panduan live demo,
+dokumentasi untuk dosen atau penguji, panduan menjalankan project, dan checklist
+sebelum deployment.

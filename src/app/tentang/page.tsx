@@ -26,40 +26,23 @@ import Link from "next/link";
 
 const team = [
   {
-    name: "Nadhira Ayu Putri",
-    role: "Project Manager & Frontend Developer",
-    major: "Teknik Informatika",
-    nim: "24060123140100",
-    foto: "/images/team/nadhira.png",
-    fallback: "N",
+    name: "Ayu Sukma Dewi",
+    major: "Prodi Farmasi",
+    foto: "/images/team/ayu.png",
     gradient: "from-earth to-warm",
-    skills: ["UI/UX Design", "React", "Project Management"],
-    instagram: "#",
-    linkedin: "#",
   },
   {
     name: "Ilham Maulana Syahid",
-    role: "Full Stack Developer",
-    major: "Teknik Informatika",
-    nim: "24060123130100",
+    major: "Prodi Informatika",
     foto: "/images/team/ilham.png",
-    fallback: "I",
     gradient: "from-primary to-emerald",
-    skills: ["Next.js", "AI Integration", "Backend"],
-    instagram: "#",
-    linkedin: "#",
   },
   {
-    name: "Raka Pratama",
-    role: "Researcher & Backend Developer",
-    major: "Teknik Informatika",
-    nim: "24060123130101",
-    foto: "/images/team/raka.png",
+    name: "Sigit Tyas Nur Ramadhan",
+    major: "Prodi Farmasi",
+    foto: "/images/team/sigit.png",
     fallback: "R",
     gradient: "from-accent to-warm",
-    skills: ["Data Analysis", "Node.js", "Database"],
-    instagram: "#",
-    linkedin: "#",
   },
 ];
 
@@ -78,7 +61,7 @@ export default function TentangPage() {
         <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} className="text-center mb-16">
           <span className="inline-flex items-center gap-2 px-4 py-2 bg-white/60 backdrop-blur-sm rounded-full border border-border text-text-secondary text-sm font-medium mb-4 shadow-sm"><Users className="w-4 h-4 text-accent" /> Tentang Kami</span>
           <h1 className="text-3xl md:text-5xl font-black text-text mb-4">Tim <span className="gradient-text">Pojok Herbal Pintar</span></h1>
-          <p className="text-text-secondary max-w-2xl mx-auto">Mahasiswa Universitas Diponegoro yang berkomitmen menciptakan inovasi herbal guna kemandirian kesehatan masyarakat Indonesia.</p>
+          <p className="text-text-secondary max-w-2xl mx-auto">Mahasiswa Universitas Diponegoro</p>
         </motion.div>
 
         {/* ═══════ LOGO UNIVERSITAS ═══════ */}
@@ -87,21 +70,20 @@ export default function TentangPage() {
           contoh: src="/images/universitas-diponegoro.png" 
         */}
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} className="mb-16">
-          <div className="glass-card rounded-2xl p-8 text-center max-w-xl mx-auto">
-            <div className="w-20 h-20 mx-auto mb-4 rounded-2xl overflow-hidden bg-white shadow-md border border-border flex items-center justify-center">
+          <div className="glass-card rounded-2xl p-6 sm:p-8 text-center max-w-lg mx-auto">
+            <div className="mx-auto mb-4 sm:mb-6 rounded-2xl overflow-hidden bg-white shadow-md border border-border flex items-center justify-center p-2 sm:p-3" style={{ width: '140px', height: '140px' }}>
               <Image
                 src="/images/universitas-diponegoro.png"
                 alt="Logo Universitas Diponegoro"
-                width={80}
-                height={80}
-                className="object-contain"
+                width={200}
+                height={200}
+                className="object-contain w-full h-full"
                 priority
               />
             </div>
-            <h2 className="text-2xl font-bold text-text mb-2">Universitas Diponegoro</h2>
-            <p className="text-text-secondary mb-1">Fakultas Teknik · Teknik Informatika</p>
+            <h2 className="text-xl sm:text-2xl font-bold text-text mb-2">Universitas Diponegoro</h2>
             <p className="text-sm text-text-muted">📍 Semarang, Jawa Tengah</p>
-            <div className="mt-4 inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-accent to-warm text-white rounded-full text-sm font-medium shadow-lg shadow-accent/20"><Award className="w-4 h-4" /> Tim Inovasi Kesehatan Masyarakat</div>
+            <div className="mt-4 inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-accent to-warm text-white rounded-full text-sm font-medium shadow-lg shadow-accent/20"><Award className="w-4 h-4" /> Tim HerbaTech</div>
           </div>
         </motion.div>
 
@@ -116,16 +98,15 @@ export default function TentangPage() {
         <div className="mb-20">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-10">
             <h2 className="text-2xl md:text-3xl font-bold text-text mb-2">Anggota <span className="text-primary">Tim</span></h2>
-            <p className="text-text-secondary">3 mahasiswa dengan dedikasi untuk kesehatan masyarakat</p>
           </motion.div>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-5 sm:gap-6 lg:gap-8">
             {team.map((m, i) => (
-              <motion.div key={m.name} initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.15 }} whileHover={{ y: -6 }} className="glass-card rounded-2xl overflow-hidden group">
+              <motion.div key={m.name} initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.15 }} whileHover={{ y: -6 }} className="glass-card h-full rounded-2xl overflow-hidden group">
                 {/* Header gradient */}
-                <div className="h-24 bg-gradient-to-r from-primary/10 to-accent/10 relative">
+                <div className="h-32 bg-gradient-to-r from-primary/10 to-accent/10 relative">
                   {/* Foto profil */}
-                  <div className="absolute -bottom-8 left-1/2 -translate-x-1/2">
-                    <div className="w-16 h-16 rounded-2xl overflow-hidden shadow-lg border-4 border-white group-hover:scale-105 transition-transform">
+                  <div className="absolute -bottom-16 sm:-bottom-20 left-1/2 -translate-x-1/2">
+                    <div className="aspect-square w-32 sm:w-40 md:w-44 rounded-2xl overflow-hidden shadow-lg border-4 border-white bg-white group-hover:scale-105 transition-transform">
                       {/* 
                         Ganti .png ke .png/.webp sesuai format file kamu.
                         Kalau file belum ada, huruf fallback (N/I/R) akan tampil.
@@ -133,16 +114,17 @@ export default function TentangPage() {
                       <Image
                         src={m.foto}
                         alt={m.name}
-                        width={64}
-                        height={64}
-                        className="w-full h-full object-cover"
+                        width={176}
+                        height={176}
+                        sizes="(max-width: 639px) 128px, (max-width: 767px) 160px, 176px"
+                        className="block w-full h-full object-cover object-center"
                         onError={(e) => {
                           // Sembunyikan gambar jika file tidak ada, tampilkan fallback
                           (e.target as HTMLImageElement).style.display = "none";
                         }}
                       />
                       {/* Fallback: huruf inisial jika gambar tidak ditemukan */}
-                      <div className={`w-full h-full bg-gradient-to-br ${m.gradient} flex items-center justify-center text-2xl font-bold text-white absolute inset-0 -z-10`}>
+                      <div className={`w-full h-full bg-gradient-to-br ${m.gradient} flex items-center justify-center text-2xl sm:text-4xl md:text-5xl font-bold text-white absolute inset-0 -z-10`}>
                         {m.fallback}
                       </div>
                     </div>
@@ -150,17 +132,9 @@ export default function TentangPage() {
                 </div>
 
                 {/* Info */}
-                <div className="p-6 pt-12 text-center">
+                <div className="flex min-h-32 flex-col items-center justify-center p-6 pt-20 sm:pt-24 text-center">
                   <h3 className="text-lg font-bold text-text mb-1">{m.name}</h3>
-                  <p className="text-sm text-primary font-medium mb-1">{m.role}</p>
-                  <p className="text-xs text-text-muted mb-4">{m.major} · {m.nim}</p>
-                  <div className="flex flex-wrap justify-center gap-2 mb-6">
-                    {m.skills.map((s) => (<span key={s} className="px-3 py-1 bg-bg text-xs text-text-secondary border border-border rounded-md font-medium">{s}</span>))}
-                  </div>
-                  <div className="flex justify-center gap-3">
-                    <a href={m.instagram} className="px-4 py-2 bg-bg text-text-secondary rounded-lg text-xs font-medium hover:bg-warm/10 hover:text-warm transition-colors border border-border">Instagram</a>
-                    <a href={m.linkedin} className="px-4 py-2 bg-bg text-text-secondary rounded-lg text-xs font-medium hover:bg-primary/10 hover:text-primary transition-colors border border-border">LinkedIn</a>
-                  </div>
+                  <p className="text-xs text-text-muted mb-4">{m.major}</p>
                 </div>
               </motion.div>
             ))}
@@ -194,8 +168,8 @@ export default function TentangPage() {
               <Leaf className="w-10 h-10 text-primary mx-auto mb-6" />
               <h2 className="text-2xl md:text-3xl font-bold text-text mb-6">Visi & Misi Kami</h2>
               <div className="space-y-6 text-text-secondary leading-relaxed">
-                <p><span className="font-semibold text-primary">Visi:</span> Menjadi platform edukasi herbal terdepan yang menghubungkan pengobatan tradisional Indonesia dengan teknologi modern.</p>
-                <p><span className="font-semibold text-primary">Misi:</span> 1) Informasi herbal akurat berdasarkan Kemenkes RI. 2) Edukasi herbal melalui Puskesmas dan Posyandu. 3) Teknologi AI untuk akses informasi herbal seluruh masyarakat.</p>
+                <p><span className="font-semibold text-primary">Visi:</span> Menjadi platform edukasi herbal yang menghubungkan pengobatan tradisional Indonesia dengan teknologi modern.</p>
+                <p><span className="font-semibold text-primary">Misi:</span> 1) Edukasi herbal melalui Puskesmas dan Posyandu. 2) Teknologi AI untuk akses informasi herbal seluruh masyarakat.</p>
               </div>
             </div>
           </div>
@@ -203,8 +177,8 @@ export default function TentangPage() {
 
         {/* CTA */}
         <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center">
-          <h2 className="text-2xl font-bold text-text mb-4">Bersama Mewujudkan Kemandirian Kesehatan</h2>
-          <p className="text-text-secondary mb-8 max-w-md mx-auto">Mari bergabung dalam gerakan edukasi herbal untuk Indonesia yang lebih sehat.</p>
+          <h2 className="text-2xl font-bold text-text mb-4">Mandiri dalam Kesehatan, Berdaya dengan Herbal</h2>
+          <p className="text-text-secondary mb-8 max-w-md mx-auto">Gerakan edukasi herbal untuk mewujudkan Indonesia yang lebih sehat.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/katalog" className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-gradient-to-r from-primary to-emerald text-white rounded-xl font-medium shadow-lg shadow-primary/20 hover:shadow-xl transition-all"><BookOpen className="w-5 h-5" /> Jelajahi Herbal</Link>
             <Link href="/ai" className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-gradient-to-r from-accent to-warm text-white rounded-xl font-medium shadow-lg shadow-accent/20 hover:shadow-xl transition-all"><Sparkles className="w-5 h-5" /> Tanya Herbal AI</Link>

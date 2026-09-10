@@ -1,171 +1,1458 @@
 [
   {
     "id": 1,
-    "nama": "Teh Daun Kelor",
-    "nama_latin": "Moringa oleifera",
-    "kategori": "Teh Herbal",
-    "gambar": "/images/kelor.png",
-    "warna_tema": "#4CAF50",
-    "manfaat": [
-      "Meningkatkan daya tahan tubuh",
-      "Menurunkan kadar gula darah",
-      "Kaya antioksidan",
-      "Mendukung kesehatan jantung"
-    ],
-    "komposisi": ["Daun kelor kering 5g", "Air panas 200ml", "Madu secukupnya (opsional)"],
-    "cara_pembuatan": "Seduh daun kelor kering dengan air panas selama 5-10 menit. Saring dan tambahkan madu jika suka.",
-    "dosis": "1-2 cangkir per hari",
-    "indikasi": [
-      "Penderita diabetes mellitus",
-      "Penderita hipertensi",
-      "Orang dengan daya tahan tubuh rendah"
-    ],
-    "kontraindikasi": [
-      "Ibu hamil dalam dosis tinggi",
-      "Penderita gangguan tiroid yang sedang minum obat"
-    ],
-    "sumber": "Panduan Jamu Nasional Kemenkes RI",
-    "tersedia": true
-  },
-  {
-    "id": 2,
-    "nama": "Wedang Jahe Temulawak",
-    "nama_latin": "Zingiber officinale & Curcuma xanthorrhiza",
-    "kategori": "Wedang",
-    "gambar": "/images/jahe.png",
-    "warna_tema": "#FF9800",
-    "manfaat": [
-      "Menghangatkan tubuh",
-      "Meredakan mual dan masuk angin",
-      "Anti inflamasi",
-      "Meningkatkan nafsu makan"
-    ],
-    "komposisi": ["Jahe segar 10g", "Temulawak 5g", "Gula merah secukupnya", "Air 300ml"],
-    "cara_pembuatan": "Rebus jahe dan temulawak dengan air hingga mendidih selama 15 menit. Saring dan tambahkan gula merah. Sajikan hangat.",
-    "dosis": "1 gelas per hari, diminum hangat",
-    "indikasi": [
-      "Masuk angin",
-      "Mual dan muntah",
-      "Nafsu makan berkurang"
-    ],
-    "kontraindikasi": [
-      "Penderita batu empedu",
-      "Penderita gangguan pembekuan darah"
-    ],
-    "sumber": "Panduan Jamu Nasional Kemenkes RI",
-    "tersedia": true
-  },
-  {
-    "id": 3,
-    "nama": "Jamu Kunyit Asam",
-    "nama_latin": "Curcuma longa & Tamarindus indica",
-    "kategori": "Jamu",
+    "nama": "Kunyit",
+    "nama_latin": "Curcuma longa L./Curcuma domestica Val.",
+    "kategori": "Herbal",
     "gambar": "/images/kunyit.png",
     "warna_tema": "#FFC107",
     "manfaat": [
-      "Melancarkan haid",
-      "Meredakan nyeri haid",
-      "Anti radang alami",
-      "Detoksifikasi tubuh"
+      "Antiinflamasi (antiradang) dan antioksidan kuat, meningkatkan sistem kekebalan tubuh, dan melancarkan pencernaan"
     ],
-    "komposisi": ["Kunyit segar 15g", "Asam jawa 10g", "Gula merah 20g", "Air 500ml"],
-    "cara_pembuatan": "Rebus kunyit yang sudah diparut dengan air. Masukkan asam jawa dan gula merah. Aduk rata, saring, dan sajikan.",
-    "dosis": "1 gelas per hari, diminum rutin",
+    "komposisi": [
+      "Rimpang"
+    ],
+    "cara_pembuatan": "Dikupas, dicuci, diparut atau diiris, lalu bisa direbus atau dijadikan bubuk kering.",
+    "dosis": "Aman dikonsumsi dalam jumlah wajar sebagai bumbu atau suplemen, tetapi konsumsi berlebihan atau ekstrak dosis tinggi berisiko memicu gangguan pencernaan, pendarahan, hingga gangguan hati.",
     "indikasi": [
-      "Nyeri haid (dismenore)",
-      "Haid tidak teratur",
-      "Peradangan ringan"
+      "Antiinflamasi (antiradang) dan antioksidan kuat, meningkatkan sistem kekebalan tubuh, dan melancarkan pencernaan"
     ],
-    "kontraindikasi": [
-      "Ibu hamil",
-      "Penderita batu saluran kemih",
-      "Penderita gangguan pembekuan darah"
+    "sumber": "hallodoc",
+    "tersedia": true,
+    "provinsi": "Jawa Tengah",
+    "kandungan": [
+      "Kurkuminoid, demetoksikurkumin, bisdemetoksikurkumin, minyak atsiri, turmeron, zat warna kurkumin."
     ],
-    "sumber": "Panduan Jamu Nasional Kemenkes RI",
-    "tersedia": true
+    "sumber_foto": "Gambar oleh Steve Buissinne dari Pixabay https://pixabay.com/id/photos/kunyit-membumbui-kari-bumbu-bahan-3251560/"
+  },
+  {
+    "id": 2,
+    "nama": "Jeruk Nipis",
+    "nama_latin": "Citrus aurantifolia",
+    "kategori": "Herbal",
+    "gambar": "/images/jeruk-nipis.png",
+    "warna_tema": "#E91E63",
+    "manfaat": [
+      "Meredakan batuk, mencerahkan kulit, melancarkan pencernaan, meningkatkan imun."
+    ],
+    "komposisi": [
+      "Air perasan buah"
+    ],
+    "cara_pembuatan": "Diperas langsung ke dalam air hangat atau dicampur madu untuk batuk.",
+    "dosis": "Dosis: 1–2 kali sehari. Interaksi: Sifat asamnya tinggi; dapat memicu iritasi lambung pada penderita gastritis/GERD jika dikonsumsi sebelum makan. Dapat meningkatkan penyerapan zat besi.",
+    "indikasi": [
+      "Meredakan batuk, mencerahkan kulit, melancarkan pencernaan, meningkatkan imun."
+    ],
+    "sumber": "Tanaman Obat Tradisional Indonesia: Kandungan Fitokimia dan Potensi Farmakologis pada OJS Portal Jurnal Kesehatan.",
+    "tersedia": true,
+    "provinsi": "Jawa Timur",
+    "kandungan": [
+      "Vitamin C, Flavonoid (Hesperidin), Asam Sitrat, Limonoid."
+    ],
+    "sumber_foto": "https://awsimages.detik.net.id/customthumb/2010/03/03/769/jeruk-nipis.jpg?w=600&q=90"
+  },
+  {
+    "id": 3,
+    "nama": "Mahkota Dewa",
+    "nama_latin": "Phaleria macrocarpa",
+    "kategori": "Herbal",
+    "gambar": "/images/mahkota-dewa.png",
+    "warna_tema": "#E91E63",
+    "manfaat": [
+      "Menurunkan kadar asam urat dan mengontrol kolesterol."
+    ],
+    "komposisi": [
+      "Daging buah (tanpa biji)."
+    ],
+    "cara_pembuatan": "Iris tipis daging buah, jemur hingga kering, lalu rebus 3-5 irisan kering dengan 2 gelas air hingga tersisa 1 gelas.",
+    "dosis": "PERINGATAN KERAS: Biji buah sangat beracun (menyebabkan kejang/bengkak). Dosis: Jangan minum rebusan yang terlalu pekat.",
+    "indikasi": [
+      "Menurunkan kadar asam urat dan mengontrol kolesterol."
+    ],
+    "sumber": "halodokter, Inhibitory Capacity of Xanthine Oxidase in Antigout Therapy by Indonesian Medicinal Plants yang dapat diakses di portal ilmiah Pharmacognosy Journal. Ulasan senyawa aktif lengkapnya juga dapat dibaca pada PMC (PMC3731883).",
+    "tersedia": true,
+    "provinsi": "Papua",
+    "kandungan": [
+      "Alkaloid, Saponin, Flavonoid, Polifenol."
+    ],
+    "sumber_foto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG620UmojDAk_aoOo73NnWw1GztPajQxNzPzyD6PzxHA&s=10"
   },
   {
     "id": 4,
-    "nama": "Beras Kencur",
-    "nama_latin": "Oryza sativa & Kaempferia galanga",
-    "kategori": "Jamu",
-    "gambar": "/images/beras-kencur.png",
-    "warna_tema": "#8BC34A",
+    "nama": "Mengkudu",
+    "nama_latin": "Morinda citrifolia",
+    "kategori": "Herbal",
+    "gambar": "/images/mengkudu.png",
+    "warna_tema": "#E91E63",
     "manfaat": [
-      "Mengatasi batuk dan pilek",
-      "Meningkatkan nafsu makan",
-      "Meredakan sakit tenggorokan",
-      "Menyegarkan badan"
+      "Menurunkan tekanan darah tinggi, meredakan nyeri sendi, anti-inflamasi."
     ],
-    "komposisi": ["Beras putih 50g", "Kencur segar 10g", "Gula pasir secukupnya", "Air 500ml"],
-    "cara_pembuatan": "Rendam beras semalam, tumbuk halus bersama kencur. Rebus dengan air, saring, beri gula. Sajikan dingin.",
-    "dosis": "1 gelas per hari",
+    "komposisi": [
+      "Buah matang (lembek/pucat)."
+    ],
+    "cara_pembuatan": "Blender buah matang menjadi jus lalu saring airnya atau diparut.",
+    "dosis": "Interaksi Medis: Hindari bersamaan dengan obat hipertensi ACE Inhibitor atau diuretik karena tinggi kalium (risiko hiperkalemia).",
     "indikasi": [
-      "Batuk pilek ringan",
-      "Anak-anak kurang nafsu makan",
-      "Kelelahan ringan"
+      "Menurunkan tekanan darah tinggi, meredakan nyeri sendi, anti-inflamasi."
     ],
-    "kontraindikasi": [
-      "Penderita diabetes (kurangi gula)",
-      "Alergi terhadap kencur"
+    "sumber": "Hypotensive Activity of Ethanolic Extracts of Morinda citrifolia L. Leaves and Fruit in Dexamethasone-Induced Hypertensive Rat terbit di laman resmi PubMed / PMC. Anda juga bisa merujuk pada studi klinis yang dipublikasikan di PubMed (PMID: 32298014)",
+    "tersedia": true,
+    "provinsi": "Jawa Barat",
+    "kandungan": [
+      "Skopoletin, Iridoid, Xeronine, Flavonoid."
     ],
-    "sumber": "Panduan Jamu Nasional Kemenkes RI",
-    "tersedia": true
+    "sumber_foto": "https://agri.kompas.com/read/2023/07/16/135816184/cara-menanam-mengkudu-buah-asli-indonesia-yang-kaya-manfaat?page=all"
   },
   {
     "id": 5,
-    "nama": "Wedang Uwuh",
-    "nama_latin": "Mix herbal tradisional",
-    "kategori": "Wedang",
-    "gambar": "/images/uwuh.png",
-    "warna_tema": "#795548",
+    "nama": "Pala",
+    "nama_latin": "Myristica fragrans",
+    "kategori": "Herbal",
+    "gambar": "/images/pala.png",
+    "warna_tema": "#FF9800",
     "manfaat": [
-      "Menghangatkan tubuh dari dalam",
-      "Meningkatkan metabolisme",
-      "Kaya antioksidan",
-      "Menyegarkan pikiran"
+      "Membantu mengatasi insomnia (susah tidur) dan menenangkan sistem saraf pusat"
     ],
-    "komposisi": ["Cengkeh 3g", "Jahe 10g", "Kayu manis 3g", "Pala 2g", "Gula merah secukupnya", "Air 400ml"],
-    "cara_pembuatan": "Rebus semua rempah dengan air selama 20 menit. Saring dan sajikan hangat dengan gula merah.",
-    "dosis": "1 gelas per hari",
+    "komposisi": [
+      "Biji buah pala"
+    ],
+    "cara_pembuatan": "Parut sedikit biji pala (sekitar 1/4 sendok teh), lalu campurkan ke dalam segelas susu hangat.",
+    "dosis": "Dosis: sangat sedikit (tidak boleh lebih dari 1–2 gram sehari). Interaksi: senyawa miristisin bersifat psikotropika pada dosis tinggi. Konsumsi pala berlebihan dapat memicu halusinasi, pusing hebat, mual, hingga keracunan. Hindari penggunaan bersamaan dengan obat penenang (sedatif) golongan benzodiazepin.",
     "indikasi": [
-      "Pegal linu",
-      "Masuk angin",
-      "Badan dingin"
+      "Membantu mengatasi insomnia (susah tidur) dan menenangkan sistem saraf pusat"
     ],
-    "kontraindikasi": [
-      "Penderita maag akut",
-      "Ibu hamil trimester awal"
+    "sumber": "alodokter",
+    "tersedia": true,
+    "provinsi": "Maluku",
+    "kandungan": [
+      "Miristisin, elemicin, safrol, dan kalium."
     ],
-    "sumber": "Panduan Jamu Nasional Kemenkes RI",
-    "tersedia": true
+    "sumber_foto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJj_Icr3D0EdTPL54ZysPWTcLt-ErkdxUhxwomKSC6nKkXY6z_izElZwY&s=10"
   },
   {
     "id": 6,
-    "nama": "Jamu Beras Kencur",
-    "nama_latin": "Oryza sativa & Kaempferia galanga",
-    "kategori": "Jamu",
-    "gambar": "/images/beras-kencur.png",
+    "nama": "Kayu Putih",
+    "nama_latin": "Melaleuca leucadendra",
+    "kategori": "Herbal",
+    "gambar": "/images/kayu-putih.png",
+    "warna_tema": "#4CAF50",
+    "manfaat": [
+      "Menghangatkan tubuh, meredakan perut kembung, dan melegakan saluran pernapasan."
+    ],
+    "komposisi": [
+      "Daun dan ranting (melalui proses distilasi menjadi minyak)."
+    ],
+    "cara_pembuatan": "Daun segar dapat direbus untuk dihirup uap panasnya guna melegakan hidung tersumbat. Jangan meminum minyak kayu putih murni.",
+    "dosis": "Dosis: penggunaan luar (topikal) secukupnya. Interaksi: minyak esensial kayu putih murni bersifat toksik jika tertelan, terutama oleh anak-anak.",
+    "indikasi": [
+      "Menghangatkan tubuh, meredakan perut kembung, dan melegakan saluran pernapasan."
+    ],
+    "sumber": "The essential oil of Melaleuca leucadendra L. (Myrtaceae) as a source of methyleugenol: Composition, antibacterial and anti-inflammatory activities. Publikasi: Taylor & Francis / Journal of Essential Oil Research",
+    "tersedia": true,
+    "provinsi": "Maluku",
+    "kandungan": [
+      "1,8-cineole (eucalyptol), melaleucin, dan limonen."
+    ],
+    "sumber_foto": "https://naturindofresh.co.id/kayu-putih-melaluca-leucadendron/"
+  },
+  {
+    "id": 7,
+    "nama": "Gambir",
+    "nama_latin": "Uncaria gambir",
+    "kategori": "Herbal",
+    "gambar": "/images/gambir.png",
+    "warna_tema": "#4CAF50",
+    "manfaat": [
+      "Mengatasi diare, mengobati sariawan, dan merawat kesehatan gusi"
+    ],
+    "komposisi": [
+      "Daun dan ranting muda"
+    ],
+    "cara_pembuatan": "Rebus atau seduh ekstrak padat dengan air hangat.",
+    "dosis": "Dosis: 1 cangkir kecil sehari. Kandungan tanin pekat berisiko memicu iritasi lambung bila berlebihan",
+    "indikasi": [
+      "Mengatasi diare, mengobati sariawan, dan merawat kesehatan gusi"
+    ],
+    "sumber": "BPOM / Halodoc",
+    "tersedia": true,
+    "provinsi": "Sumatra Barat",
+    "kandungan": [
+      "Katekin, asam katekutanat, kuersetin, alkaloid"
+    ],
+    "sumber_foto": "Uncaria gambir (W.Hunter) Roxb. observed in Indonesia by coqwallon (licensed under CC BY-NC 4.0)"
+  },
+  {
+    "id": 8,
+    "nama": "Andaliman",
+    "nama_latin": "Zanthoxylum acanthopodium",
+    "kategori": "Herbal",
+    "gambar": "/images/andaliman.png",
+    "warna_tema": "#FF9800",
+    "manfaat": [
+      "Mengatasi bau mulut, menjaga daya tahan tubuh, dan antimikroba"
+    ],
+    "komposisi": [
+      "Buah"
+    ],
+    "cara_pembuatan": "Tumbuk halus buah sebagai bumbu masakan tradisional atau seduh air hangat",
+    "dosis": "Aman dikonsumsi harian dalam bumbu masakan. Rasa getir berlebih dapat merangsang lambung",
+    "indikasi": [
+      "Mengatasi bau mulut, menjaga daya tahan tubuh, dan antimikroba"
+    ],
+    "sumber": "Alodokter",
+    "tersedia": true,
+    "provinsi": "Sumatra Utara",
+    "kandungan": [
+      "Geraniol, linalool, limonene, alkaloid"
+    ],
+    "sumber_foto": "Katzer, G. 2012. Sichuan pepper and others(Zanthoxylum piperitum, simulans, bungea-num, rhetsa, acanthopodium). http://www.uni-grat.at."
+  },
+  {
+    "id": 9,
+    "nama": "Kayu Manis",
+    "nama_latin": "Cinnamomum burmannii",
+    "kategori": "Herbal",
+    "gambar": "/images/kayu-manis.png",
+    "warna_tema": "#FF9800",
+    "manfaat": [
+      "Menurunkan kadar gula darah dan meredakan peradangan"
+    ],
+    "komposisi": [
+      "Kulit batang"
+    ],
+    "cara_pembuatan": "Rebus 1 batang kayu manis dalam 2 gelas air selama 10 menit, lalu saring.",
+    "dosis": "Dosis: 1 cangkir sehari (maksimal 1–2 gram). Hindari dosis tinggi karena kandungan kumarin berisiko pada hati",
+    "indikasi": [
+      "Menurunkan kadar gula darah dan meredakan peradangan"
+    ],
+    "sumber": "PubMed / Halodoc",
+    "tersedia": true,
+    "provinsi": "Jambi",
+    "kandungan": [
+      "Sinamaldehida, eugenol, asam sinamat, dan tanin"
+    ],
+    "sumber_foto": "Gambar oleh Marefee  dari Pxherehttps://pxhere.com/id/photo/1433359?utm_content=shareClip&utm_medium=referral&utm_source=pxhere"
+  },
+  {
+    "id": 10,
+    "nama": "Pinang",
+    "nama_latin": "Areca catechu",
+    "kategori": "Herbal",
+    "gambar": "/images/pinang.png",
+    "warna_tema": "#CD7F32",
+    "manfaat": [
+      "Meningkatkan energi/stamina dan mengobati cacingan"
+    ],
+    "komposisi": [
+      "Biji buah"
+    ],
+    "cara_pembuatan": "Iris tipis biji muda, keringkan, lalu rebus atau dikunyah bersama sirih",
+    "dosis": "Dosis: Sangat terbatas. Arekolin bersifat stimulansia; penggunaan jangka panjang berisiko pada jaringan mulut",
+    "indikasi": [
+      "Meningkatkan energi/stamina dan mengobati cacingan"
+    ],
+    "sumber": "Alodokter",
+    "tersedia": true,
+    "provinsi": "Aceh",
+    "kandungan": [
+      "Arekolin, arekaidin, guvakolin, tanin"
+    ],
+    "sumber_foto": "https://pxhere.com/id/photo/1111871?utm_content=shareClip&utm_medium=referral&utm_source=pxhere"
+  },
+  {
+    "id": 11,
+    "nama": "Lada Hitam",
+    "nama_latin": "Piper nigrum",
+    "kategori": "Herbal",
+    "gambar": "/images/lada-hitam.png",
+    "warna_tema": "#FF9800",
+    "manfaat": [
+      "Meredakan perut kembung dan meningkatkan penyerapan nutrisi"
+    ],
+    "komposisi": [
+      "Biji buah kering"
+    ],
+    "cara_pembuatan": "Tumbuk kasar biji, seduh dengan air hangat dan madu, atau campur pada makanan",
+    "dosis": "Dosis: Secukupnya. Piperin dapat meningkatkan penyerapan beberapa jenis obat kimia di usus",
+    "indikasi": [
+      "Meredakan perut kembung dan meningkatkan penyerapan nutrisi"
+    ],
+    "sumber": "Halodoc",
+    "tersedia": true,
+    "provinsi": "Kepulauan Bangka Belitung",
+    "kandungan": [
+      "Piperin, piperidin, chavicin, minyak atsiri"
+    ],
+    "sumber_foto": "https://pxhere.com/en/photo/1138508?utm_content=shareClip&utm_medium=referral&utm_source=pxhere"
+  },
+  {
+    "id": 12,
+    "nama": "Daun Bangun-Bangun",
+    "nama_latin": "Coleus amboinicus",
+    "kategori": "Herbal",
+    "gambar": "/images/daun-bangun-bangun.png",
+    "warna_tema": "#4CAF50",
+    "manfaat": [
+      "Pelancar ASI (galaktogog) dan meredakan batuk"
+    ],
+    "komposisi": [
+      "Daun"
+    ],
+    "cara_pembuatan": "Masak daun segar menjadi sup hangat atau peras airnya setelah diremas",
+    "dosis": "Sangat aman dikonsumsi harian bagi ibu menyusui. Hindari porsi ekstrem bila ada alergi",
+    "indikasi": [
+      "Pelancar ASI (galaktogog) dan meredakan batuk"
+    ],
+    "sumber": "Alodokter",
+    "tersedia": true,
+    "provinsi": "Sumatra Utara",
+    "kandungan": [
+      "Karvakrol, timol, fenol, asam rosmarinat"
+    ],
+    "sumber_foto": "https://hellosehat.com/herbal-alternatif/herbal/daun-bangun-bangun"
+  },
+  {
+    "id": 13,
+    "nama": "Bawang Dayak",
+    "nama_latin": "Eleutherine bulbosa",
+    "kategori": "Herbal",
+    "gambar": "/images/bawang-dayak.png",
+    "warna_tema": "#795548",
+    "manfaat": [
+      "Mengontrol gula darah dan menurunkan tekanan darah"
+    ],
+    "komposisi": [
+      "Umbi"
+    ],
+    "cara_pembuatan": "Cuci umbi, iris tipis, keringkan lalu seduh dengan air panas seperti teh",
+    "dosis": "Dosis: 1–2 cangkir sehari. Konsultasikan bila sedang mengonsumsi obat antidiabetes sintetik",
+    "indikasi": [
+      "Mengontrol gula darah dan menurunkan tekanan darah"
+    ],
+    "sumber": "Halodoc",
+    "tersedia": true,
+    "provinsi": "Kalimantan Timur",
+    "kandungan": [
+      "Eleuterin, isoeleuterin, eleuterol, naptoquinon"
+    ],
+    "sumber_foto": "Gambaf oleh Alajaya dari https://commons.wikimedia.org/wiki/File:Umbi_Bawang_Dayak.jpg"
+  },
+  {
+    "id": 14,
+    "nama": "Tabat Barito",
+    "nama_latin": "Ficus deltoidea",
+    "kategori": "Herbal",
+    "gambar": "/images/tabat-barito.png",
+    "warna_tema": "#4CAF50",
+    "manfaat": [
+      "Menjaga kesehatan organ kewanitaan dan melancarkan peredaran darah"
+    ],
+    "komposisi": [
+      "Daun"
+    ],
+    "cara_pembuatan": "Rebus 5–7 lembar daun kering dengan 2 gelas air hingga tersisa 1 gelas, lalu saring",
+    "dosis": "Dosis: 1 cangkir sehari. Penggunaan berlebihan dapat memicu hipotensi ringan",
+    "indikasi": [
+      "Menjaga kesehatan organ kewanitaan dan melancarkan peredaran darah"
+    ],
+    "sumber": "Halodoc",
+    "tersedia": true,
+    "provinsi": "Kalimantan Tengah",
+    "kandungan": [
+      "Flavonoid, tanin, triterpenoid, saponin"
+    ],
+    "sumber_foto": "Gambar oleh Mokkie dari https://commons.wikimedia.org/wiki/File:Mistletoe_Fig_(Ficus_deltoidea).jpg"
+  },
+  {
+    "id": 15,
+    "nama": "Kasturi",
+    "nama_latin": "Mangifera casturi",
+    "kategori": "Herbal",
+    "gambar": "/images/kasturi.png",
+    "warna_tema": "#7CFC00",
+    "manfaat": [
+      "Menjaga kesehatan kulit dan menangkal radikal bebas"
+    ],
+    "komposisi": [
+      "Buah dan daun"
+    ],
+    "cara_pembuatan": "Konsumsi buah segar atau rebus daun mudanya sebagai teh herbal antioksidan",
+    "dosis": "Aman dikonsumsi harian sebagai buah atau minuman herbal dalam jumlah wajar",
+    "indikasi": [
+      "Menjaga kesehatan kulit dan menangkal radikal bebas"
+    ],
+    "sumber": "Alodokter",
+    "tersedia": true,
+    "provinsi": "Kalimantan Selatan",
+    "kandungan": [
+      "Mangiferin, polifenol, karotenoid, vitamin C"
+    ],
+    "sumber_foto": "RRI. Tanaman Jeruk Kasturi.2025. Jeruk Kasturi, Tanaman Aromatik Berkhasiat Untuk Kesehatan, https://rri.co.id/bengkalis/kesehatan/2060857/jeruk-kasturi-tanaman-aromatik-berkhasiat-untuk-kesehatan"
+  },
+  {
+    "id": 17,
+    "nama": "Cengkeh",
+    "nama_latin": "Syzygium aromaticum",
+    "kategori": "Herbal",
+    "gambar": "/images/cengkeh.png",
+    "warna_tema": "#009688",
+    "manfaat": [
+      "Meredakan sakit gigi dan bersifat antiseptik mulut"
+    ],
+    "komposisi": [
+      "Bunga kering dan minyak"
+    ],
+    "cara_pembuatan": "Teteskan minyak cengkeh pada kapas untuk sakit gigi, atau seduh 2–3 kuntum bunga kering",
+    "dosis": "Penggunaan topikal secukupnya. Jangan menelan minyak murni karena berisiko toksik pada hati",
+    "indikasi": [
+      "Meredakan sakit gigi dan bersifat antiseptik mulut"
+    ],
+    "sumber": "Halodoc",
+    "tersedia": true,
+    "provinsi": "Sulawesi Utara",
+    "kandungan": [
+      "Eugenol, eugenyl acetate, beta-caryophyllene"
+    ],
+    "sumber_foto": "Gambar diambil dari Pxhere. https://pxhere.com/id/photo/781914?utm_content=shareClip&utm_medium=referral&utm_source=pxhere"
+  },
+  {
+    "id": 18,
+    "nama": "Pulai",
+    "nama_latin": "Alstonia scholaris",
+    "kategori": "Herbal",
+    "gambar": "/images/pulai.png",
+    "warna_tema": "#795548",
+    "manfaat": [
+      "Meredakan demam dan meredakan diare"
+    ],
+    "komposisi": [
+      "Kulit kayu batang"
+    ],
+    "cara_pembuatan": "Rebus 5 gram kulit kayu kering bersih dengan 2 gelas air hingga tersisa 1 gelas",
+    "dosis": "Dosis: 1 kali sehari. Rasa sangat pahit; tidak disarankan untuk wanita hamil dan menyusui",
+    "indikasi": [
+      "Meredakan demam dan meredakan diare"
+    ],
+    "sumber": "Halodoc",
+    "tersedia": true,
+    "provinsi": "Sulawesi Selatan",
+    "kandungan": [
+      "Ekitamin, alstonin, echitenine, alkaloid"
+    ],
+    "sumber_foto": "Gambar oleh Margaret Dolard dari Flick. https://flic.kr/p/8v1JvL"
+  },
+  {
+    "id": 19,
+    "nama": "Kayu Angin",
+    "nama_latin": "Usnea barbata",
+    "kategori": "Herbal",
+    "gambar": "/images/kayu-angin.png",
+    "warna_tema": "#8BC34A",
+    "manfaat": [
+      "Mengobati batuk kronis dan sariawan"
+    ],
+    "komposisi": [
+      "Thallus (lumut kerak)"
+    ],
+    "cara_pembuatan": "Rebus 3 gram kayu angin bersama ramuan lain (seperti kayu manis) lalu saring",
+    "dosis": "Dosis: Dosis kecil. Asam usnat dalam dosis tinggi berisiko hepatotoksik (kerusakan hati)",
+    "indikasi": [
+      "Mengobati batuk kronis dan sariawan"
+    ],
+    "sumber": "BPOM / Alodokter",
+    "tersedia": true,
+    "provinsi": "Sulawesi Tengah",
+    "kandungan": [
+      "Asam usnat, asam barbatat, polifenol"
+    ],
+    "sumber_foto": "Gambar diambil dari  Un mundo ecosostenible. https://antropocene.it/es/2023/03/15/usnea-barbata-3/"
+  },
+  {
+    "id": 20,
+    "nama": "Srikaya",
+    "nama_latin": "Annona squamosa",
+    "kategori": "Herbal",
+    "gambar": "/images/srikaya.png",
+    "warna_tema": "#C85A17",
+    "manfaat": [
+      "Mengatasi kutu kepala (daun) dan pelancar pencernaan (buah)"
+    ],
+    "komposisi": [
+      "Daun dan buah"
+    ],
+    "cara_pembuatan": "Tumbuk daun segar untuk dioleskan ke kulit kepala, atau makan buah matang segar",
+    "dosis": "Biji dan daun mengandung racun jika tertelan; hanya daun yang diolah luar dan buah yang dimakan",
+    "indikasi": [
+      "Mengatasi kutu kepala (daun) dan pelancar pencernaan (buah)"
+    ],
+    "sumber": "Alodokter",
+    "tersedia": true,
+    "provinsi": "Nusa Tenggara Barat",
+    "kandungan": [
+      "Annonain, squamocin, alkaloid, flavonoid"
+    ],
+    "sumber_foto": "Gambar dambil dari Pxhere. https://pxhere.com/id/photo/1360037?utm_content=shareClip&utm_medium=referral&utm_source=pxhere"
+  },
+  {
+    "id": 21,
+    "nama": "Cendana",
+    "nama_latin": "Santalum album",
+    "kategori": "Herbal",
+    "gambar": "/images/cendana.png",
+    "warna_tema": "#795548",
+    "manfaat": [
+      "Menenangkan pikiran (relaksasi) dan meredakan peradangan"
+    ],
+    "komposisi": [
+      "Kayu batang dan minyak"
+    ],
+    "cara_pembuatan": "Rebus serutan kayu atau gunakan minyaknya untuk aromaterapi.",
+    "dosis": "Aman untuk pemakaian luar dan aromaterapi. Rebusan kayu diminum dalam dosis sangat rendah",
+    "indikasi": [
+      "Menenangkan pikiran (relaksasi) dan meredakan peradangan"
+    ],
+    "sumber": "PubMed / Alodokter",
+    "tersedia": true,
+    "provinsi": "Nusa Tenggara Timur",
+    "kandungan": [
+      "Alpha-santalol, beta-santalol, santalene"
+    ],
+    "sumber_foto": "Gambar diambil dari ciriciripohon.id https://pxhere.com/id/photo/1360037?utm_content=shareClip&utm_medium=referral&utm_source=pxhere"
+  },
+  {
+    "id": 22,
+    "nama": "Daun Ungu",
+    "nama_latin": "Graptophyllum pictum",
+    "kategori": "Herbal",
+    "gambar": "/images/daun-ungu.png",
+    "warna_tema": "#4CAF50",
+    "manfaat": [
+      "Meringankan dan mengobati wasir/ambeien"
+    ],
+    "komposisi": [
+      "Daun"
+    ],
+    "cara_pembuatan": "Rebus 7–10 lembar daun segar dengan 3 gelas air hingga tersisa 1 gelas.",
+    "dosis": "Dosis: 1–2 kali sehari. Sangat baik dikombinasikan dengan konsumsi serat tinggi dan air putih",
+    "indikasi": [
+      "Meringankan dan mengobati wasir/ambeien"
+    ],
+    "sumber": "Halodoc",
+    "tersedia": true,
+    "provinsi": "Bali",
+    "kandungan": [
+      "Flavonoid, tanin, alkaloid, steroid"
+    ],
+    "sumber_foto": "Gambar diambil dari Kompas lifestyle. https://lifestyle.kompas.com/read/2022/08/30/102318020/khasiat-daun-ungu-untuk-obat-ambeien"
+  },
+  {
+    "id": 23,
+    "nama": "Buah Merah",
+    "nama_latin": "Pandanus conoideus",
+    "kategori": "Herbal",
+    "gambar": "/images/buah-merah.png",
+    "warna_tema": "#DC143C",
+    "manfaat": [
+      "Meningkatkan daya tahan tubuh dan kesehatan mata"
+    ],
+    "komposisi": [
+      "Buah (ekstrak minyak)"
+    ],
+    "cara_pembuatan": "Rebus atau ekstrak buah hingga keluar minyak merah pekat.",
+    "dosis": "Dosis: 1 sendok makan sehari. Perhatikan kalori bagi penderita hiperlipidemia",
+    "indikasi": [
+      "Meningkatkan daya tahan tubuh dan kesehatan mata"
+    ],
+    "sumber": "PubMed / Alodokter",
+    "tersedia": true,
+    "provinsi": "Papua",
+    "kandungan": [
+      "Beta-karoten, alfa-tokoferol, asam oleat"
+    ],
+    "sumber_foto": "https://www.kompasiana.com/sisarimerah/5847839d9293736907583310/3-manfaat-buah-merah-khas-dari-tanah-papua"
+  },
+  {
+    "id": 24,
+    "nama": "Keben",
+    "nama_latin": "Barringtonia asiatica",
+    "kategori": "Herbal",
+    "gambar": "/images/keben.png",
+    "warna_tema": "#4169E1",
+    "manfaat": [
+      "Antiseptik luka dan perawatan infeksi mata luar"
+    ],
+    "komposisi": [
+      "Biji buah"
+    ],
+    "cara_pembuatan": "Ekstrak tetes air biji keben digunakan secara tradisional setelah pemurnian steril",
+    "dosis": "Peringatan: Harus diproses steril. Penggunaan sembarangan pada mata berisiko iritasi/infeksi",
+    "indikasi": [
+      "Antiseptik luka dan perawatan infeksi mata luar"
+    ],
+    "sumber": "Halodoc",
+    "tersedia": true,
+    "provinsi": "Papua Barat",
+    "kandungan": [
+      "Saponin, hydrocyanic acid, tanin"
+    ],
+    "sumber_foto": "https://www.picturethisai.com/wiki/Barringtonia_asiatica.html"
+  },
+  {
+    "id": 25,
+    "nama": "Daun Gatal",
+    "nama_latin": "Laportea decumana",
+    "kategori": "Herbal",
+    "gambar": "/images/daun-gatal.png",
+    "warna_tema": "#4CAF50",
+    "manfaat": [
+      "Meredakan pegal linu, nyeri otot, dan keletihan"
+    ],
+    "komposisi": [
+      "Daun segar"
+    ],
+    "cara_pembuatan": "Daun segar diusapkan atau ditempelkan langsung pada bagian tubuh yang pegal",
+    "dosis": "Efek samping: Menyebabkan gatal/bentol sementara yang memicu pelebaran pembuluh darah lokal",
+    "indikasi": [
+      "Meredakan pegal linu, nyeri otot, dan keletihan"
+    ],
+    "sumber": "Alodokter / Kemdikbud",
+    "tersedia": true,
+    "provinsi": "Papua Selatan",
+    "kandungan": [
+      "Asam format, histamin, prostaglandin"
+    ],
+    "sumber_foto": "Gambar diambil dari BioLib.cz https://www.biolib.cz/en/image/id243555/"
+  },
+  {
+    "id": 26,
+    "nama": "Temu Ireng",
+    "nama_latin": "Curcuma aeruginosa",
+    "kategori": "Herbal",
+    "gambar": "/images/temu-ireng.png",
+    "warna_tema": "#FFC107",
+    "manfaat": [
+      "Mengobati cacingan dan melancarkan haid"
+    ],
+    "komposisi": [
+      "Rimpang"
+    ],
+    "cara_pembuatan": "Parut rimpang, peras airnya, campur dengan sedikit air hangat dan garam/madu",
+    "dosis": "Dosis: 1 kali sehari. Tidak disarankan untuk wanita hamil karena merangsang rahim",
+    "indikasi": [
+      "Mengobati cacingan dan melancarkan haid"
+    ],
+    "sumber": "BPOM / Alodokter",
+    "tersedia": true,
+    "provinsi": "Banten",
+    "kandungan": [
+      "Kurkuminoid, germakron, isocurcumenol"
+    ],
+    "sumber_foto": "Dokumentasi Selera Nusantara, diambil dari RRI. https://rri.co.id/semarang/kesehatan/1458719/faq.html"
+  },
+  {
+    "id": 27,
+    "nama": "Temulawak",
+    "nama_latin": "Curcuma xanthorrhiza Roxb.",
+    "kategori": "Herbal",
+    "gambar": "/images/temulawak.png",
+    "warna_tema": "#FFC107",
+    "manfaat": [
+      "Meningkatkan nafsu makan, menjaga fungsi hati, antiinflamasi, dan melancarkan pencernaan."
+    ],
+    "komposisi": [
+      "Rimpang"
+    ],
+    "cara_pembuatan": "Cuci dan parut rimpang, peras airnya, lalu rebus dengan air.",
+    "dosis": "Aman dikonsumsi 1–2 kali sehari. Hindari dosis tinggi pada ibu hamil dan penderita batu empedu.",
+    "indikasi": [
+      "Meningkatkan nafsu makan, menjaga fungsi hati, antiinflamasi, dan melancarkan pencernaan."
+    ],
+    "sumber": "BPOM RI, Herbarium Medicum Indonesia",
+    "tersedia": true,
+    "provinsi": "Jawa Tengah",
+    "kandungan": [
+      "Kurkuminoid, xanthorrhizol, phellandrene, turmerone."
+    ],
+    "sumber_foto": "https://desagrogol.gunungkidulkab.go.id/first/artikel/2297-Tanaman-Temulawak"
+  },
+  {
+    "id": 28,
+    "nama": "Jahe Merah",
+    "nama_latin": "Zingiber officinale var. rubrum",
+    "kategori": "Herbal",
+    "gambar": "/images/jahe-merah.png",
+    "warna_tema": "#FFC107",
+    "manfaat": [
+      "Menghangatkan tubuh, meredakan mual, meningkatkan imun, antinyeri, dan antiinflamasi."
+    ],
+    "komposisi": [
+      "Rimpang"
+    ],
+    "cara_pembuatan": "Rebus dengan air panas, saring, lalu tambahkan madu. Bisa juga dibuat wedang.",
+    "dosis": "Aman 1–3 gram per hari. Hindari pada penderita gangguan pembekuan darah atau yang mengonsumsi antikoagulan.",
+    "indikasi": [
+      "Menghangatkan tubuh, meredakan mual, meningkatkan imun, antinyeri, dan antiinflamasi."
+    ],
+    "sumber": "Jurnal Farmasi Indonesia, Herbal Indonesia",
+    "tersedia": true,
+    "provinsi": "Jawa Barat",
+    "kandungan": [
+      "Gingerol, shogaol, paradol, zingerone, flavonoid."
+    ],
+    "sumber_foto": "Gambar diambil dari https://desaputat.gunungkidulkab.go.id/first/artikel/1915-10-MANFAAT-JAHE-MERAH-YANG-MUJARAB-REDAKAN-PENYAKIT"
+  },
+  {
+    "id": 29,
+    "nama": "Sambiloto",
+    "nama_latin": "Andrographis paniculata (Burm.f.) Nees",
+    "kategori": "Herbal",
+    "gambar": "/images/sambiloto.png",
+    "warna_tema": "#4CAF50",
+    "manfaat": [
+      "Antibakteri, antivirus, menurunkan demam, dan meningkatkan sistem imun."
+    ],
+    "komposisi": [
+      "Daun dan batang"
+    ],
+    "cara_pembuatan": "Rebus 10–15 lembar daun dalam 2 gelas air hingga tersisa 1 gelas.",
+    "dosis": "Tidak untuk ibu hamil. Dapat menurunkan tekanan darah; pantau jika minum obat antihipertensi.",
+    "indikasi": [
+      "Antibakteri, antivirus, menurunkan demam, dan meningkatkan sistem imun."
+    ],
+    "sumber": "Farmakope Herbal Indonesia, BPOM",
+    "tersedia": true,
+    "provinsi": "DKI Jakarta",
+    "kandungan": [
+      "Andrografolid, neoandrografolid, flavonoid, alkaloid."
+    ],
+    "sumber_foto": "Gambar oleh  Dinesh valka  dari Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Andrographis_paniculata_(Burm.f.)_Nees_(49163174512).jpg"
+  },
+  {
+    "id": 30,
+    "nama": "Pegagan",
+    "nama_latin": "Centella asiatica (L.) Urban",
+    "kategori": "Herbal",
+    "gambar": "/images/pegagan.png",
+    "warna_tema": "#4CAF50",
+    "manfaat": [
+      "Meningkatkan daya ingat, menyembuhkan luka, antiinflamasi, dan menjaga kesehatan kulit."
+    ],
+    "komposisi": [
+      "Daun dan batang"
+    ],
+    "cara_pembuatan": "Daun segar direbus atau dimakan langsung sebagai lalapan. Bisa dijus dengan madu.",
+    "dosis": "Aman dikonsumsi hingga 60 mg/hari. Hindari pada gangguan hati. Tidak untuk ibu hamil jangka panjang.",
+    "indikasi": [
+      "Meningkatkan daya ingat, menyembuhkan luka, antiinflamasi, dan menjaga kesehatan kulit."
+    ],
+    "sumber": "WHO Monographs on Selected Medicinal Plants",
+    "tersedia": true,
+    "provinsi": "DI Yogyakarta",
+    "kandungan": [
+      "Asiatikosida, madekasosida, asam asiatat, triterpenoid."
+    ],
+    "sumber_foto": "Gambar oleh  Ahmafd Fuas Bin Morad diakses dari Flickr. https://flic.kr/p/at912w"
+  },
+  {
+    "id": 31,
+    "nama": "Lidah Buaya",
+    "nama_latin": "Aloe vera (L.) Burm.f.",
+    "kategori": "Herbal",
+    "gambar": "/images/lidah-buaya.png",
+    "warna_tema": "#4CAF50",
+    "manfaat": [
+      "Melembapkan kulit, menyembuhkan luka bakar, melancarkan pencernaan, dan anti-inflamasi."
+    ],
+    "komposisi": [
+      "Gel daun"
+    ],
+    "cara_pembuatan": "Ambil gel langsung dari daun, lalu oleskan ke kulit atau campurkan dengan jus.",
+    "dosis": "Penggunaan topikal aman. Konsumsi oral berlebihan bisa memicu diare. Hindari pada ibu hamil.",
+    "indikasi": [
+      "Melembapkan kulit, menyembuhkan luka bakar, melancarkan pencernaan, dan anti-inflamasi."
+    ],
+    "sumber": "BPOM, Jurnal Dermatologi Indonesia",
+    "tersedia": true,
+    "provinsi": "Kalimantan Barat",
+    "kandungan": [
+      "Aloin, emodin, acemannan, antrakuinon, vitamin E dan C."
+    ],
+    "sumber_foto": "Gambar oleh Bob P&S Photography diakses dari Flickr. https://flic.kr/p/95oUn1"
+  },
+  {
+    "id": 32,
+    "nama": "Kumis Kucing",
+    "nama_latin": "Orthosiphon aristatus (Blume) Miq.",
+    "kategori": "Herbal",
+    "gambar": "/images/kumis-kucing.png",
+    "warna_tema": "#4CAF50",
+    "manfaat": [
+      "Melancarkan buang air kecil, mencegah batu ginjal, antihipertensi, dan antidiabetes."
+    ],
+    "komposisi": [
+      "Daun"
+    ],
+    "cara_pembuatan": "Rebus 25–50 gram daun kering dengan 2 gelas air.",
+    "dosis": "Aman dalam dosis wajar. Hindari konsumsi bersamaan dengan obat diuretik. Tidak untuk ibu hamil.",
+    "indikasi": [
+      "Melancarkan buang air kecil, mencegah batu ginjal, antihipertensi, dan antidiabetes."
+    ],
+    "sumber": "Farmakope Herbal Indonesia",
+    "tersedia": true,
+    "provinsi": "Jawa Timur",
+    "kandungan": [
+      "Sinensetin, eupatorin, rosmarinat, orthosiphon glikosida."
+    ],
+    "sumber_foto": "Gambar oleh  Adrina Aknes diakses dari Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Kumis_Kucing_(Orthosiphon_aristatus).jpg"
+  },
+  {
+    "id": 33,
+    "nama": "Kencur",
+    "nama_latin": "Kaempferia galanga L.",
+    "kategori": "Herbal",
+    "gambar": "/images/kencur.png",
+    "warna_tema": "#FFC107",
+    "manfaat": [
+      "Meredakan batuk, meningkatkan nafsu makan, meredakan pegal linu, dan melancarkan haid."
+    ],
+    "komposisi": [
+      "Rimpang"
+    ],
+    "cara_pembuatan": "Parut rimpang, peras airnya, lalu campurkan dengan madu dan garam.",
+    "dosis": "Aman untuk dewasa dalam dosis rendah. Hindari pada ibu hamil karena bersifat stimulan uterus.",
+    "indikasi": [
+      "Meredakan batuk, meningkatkan nafsu makan, meredakan pegal linu, dan melancarkan haid."
+    ],
+    "sumber": "BPOM RI, Ensiklopedia Tanaman Obat Indonesia",
+    "tersedia": true,
+    "provinsi": "Jawa Barat",
+    "kandungan": [
+      "Etil sinamat, etil p-metoksisinamat, kamfer, borneol, paraeumarin."
+    ],
+    "sumber_foto": "Gambar oleh luc viaotour. https://upload.wikimedia.org/wikipedia/commons/e/e4/Lesser_galangal_Kencur_Luc_Viatour.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original"
+  },
+  {
+    "id": 34,
+    "nama": "Sirih Merah",
+    "nama_latin": "Piper crocatum Ruiz & Pav.",
+    "kategori": "Herbal",
+    "gambar": "/images/sirih-merah.png",
+    "warna_tema": "#4CAF50",
+    "manfaat": [
+      "Antidiabetes, antiseptik, antiinflamasi, dan menjaga kesehatan mulut dan organ intim."
+    ],
+    "komposisi": [
+      "Daun"
+    ],
+    "cara_pembuatan": "Rebus 3–5 lembar daun dengan 3 gelas air hingga tersisa 2 gelas.",
+    "dosis": "Aman untuk pemakaian eksternal. Konsumsi oral jangka panjang perlu pengawasan dokter.",
+    "indikasi": [
+      "Antidiabetes, antiseptik, antiinflamasi, dan menjaga kesehatan mulut dan organ intim."
+    ],
+    "sumber": "Jurnal Farmasi Klinik Indonesia",
+    "tersedia": true,
+    "provinsi": "Jawa Tengah",
+    "kandungan": [
+      "Flavonoid, alkaloid, polifenol, tanin, saponin, minyak atsiri."
+    ],
+    "sumber_foto": "Gambar oleh JVO5 Atik Suryani diakses dari Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Sirih-merah.jpg"
+  },
+  {
+    "id": 35,
+    "nama": "Tapak Dara",
+    "nama_latin": "Catharanthus roseus (L.) G.Don",
+    "kategori": "Herbal",
+    "gambar": "/images/tapak-dara.png",
+    "warna_tema": "#4CAF50",
+    "manfaat": [
+      "Antikanker (digunakan dalam kemoterapi), antidiabetes, antihipertensi."
+    ],
+    "komposisi": [
+      "Daun dan bunga"
+    ],
+    "cara_pembuatan": "Rebus 15 lembar daun dengan 3 gelas air hingga tersisa 1 gelas.",
+    "dosis": "Harus hati-hati; senyawa aktifnya bersifat toksik dalam dosis tinggi. Konsultasikan dengan dokter.",
+    "indikasi": [
+      "Antikanker (digunakan dalam kemoterapi), antidiabetes, antihipertensi."
+    ],
+    "sumber": "National Cancer Institute, Jurnal Onkologi Indonesia",
+    "tersedia": true,
+    "provinsi": "DKI Jakarta",
+    "kandungan": [
+      "Vinblastine, vincristine, ajmalicine, serpentine, alkaloid indol."
+    ],
+    "sumber_foto": "Gambar oleh Rajaarnold dari Wikimedia commons. https://commons.wikimedia.org/wiki/File:Tapak_Dara.jpg"
+  },
+  {
+    "id": 36,
+    "nama": "Keji Beling",
+    "nama_latin": "Strobilanthes crispus Blume",
+    "kategori": "Herbal",
+    "gambar": "/images/keji-beling.png",
+    "warna_tema": "#4CAF50",
+    "manfaat": [
+      "Menghancurkan batu ginjal, melancarkan urin, menurunkan kadar gula darah."
+    ],
+    "komposisi": [
+      "Daun"
+    ],
+    "cara_pembuatan": "Rebus 50 gram daun segar dengan 3 gelas air hingga tersisa 2 gelas.",
+    "dosis": "Aman dalam dosis wajar. Minum air putih yang cukup saat mengonsumsi untuk membantu pengeluaran batu.",
+    "indikasi": [
+      "Menghancurkan batu ginjal, melancarkan urin, menurunkan kadar gula darah."
+    ],
+    "sumber": "Jurnal Nefrologi Indonesia, Herbal Indonesia",
+    "tersedia": true,
+    "provinsi": "Jawa Tengah",
+    "kandungan": [
+      "Kalium, natrium, kalsium, asam silikat, flavonoid."
+    ],
+    "sumber_foto": "https://kumparan.com/seputar-hobi/cara-budidaya-tanaman-keji-beling-untuk-obat-21fmshAoo5J"
+  },
+  {
+    "id": 37,
+    "nama": "Brotowali",
+    "nama_latin": "Tinospora crispa (L.) Hook.f. & Thomson",
+    "kategori": "Herbal",
+    "gambar": "/images/brotowali.png",
+    "warna_tema": "#795548",
+    "manfaat": [
+      "Antidiabetes, antipiretik (penurun demam), antimalaria, dan meningkatkan imun."
+    ],
+    "komposisi": [
+      "Batang"
+    ],
+    "cara_pembuatan": "Rebus 10 cm batang dengan 3 gelas air hingga tersisa 1 gelas.",
+    "dosis": "Rasa sangat pahit. Aman dalam dosis terukur, hindari pada ibu hamil dan menyusui.",
+    "indikasi": [
+      "Antidiabetes, antipiretik (penurun demam), antimalaria, dan meningkatkan imun."
+    ],
+    "sumber": "Farmakope Herbal Indonesia",
+    "tersedia": true,
+    "provinsi": "Sulawesi Selatan",
+    "kandungan": [
+      "Borneol, tinokrisposid, alkaloid, glikosida pahit, pati."
+    ],
+    "sumber_foto": "https://agri.kompas.com/read/2022/11/17/164413484/cara-menggunakan-brotowali-sebagai-pupuk-dan-pestisida-nabati?page=all"
+  },
+  {
+    "id": 38,
+    "nama": "Bidara Arab",
+    "nama_latin": "Ziziphus mauritiana Lam.",
+    "kategori": "Herbal",
+    "gambar": "/images/bidadari-arab.png",
+    "warna_tema": "#4CAF50",
+    "manfaat": [
+      "Antiseptik, menenangkan pikiran, menurunkan gula darah, dan mengatasi masalah kulit."
+    ],
+    "komposisi": [
+      "Daun dan buah"
+    ],
+    "cara_pembuatan": "Rebus 7 lembar daun dengan 2 gelas air.",
+    "dosis": "Aman dikonsumsi. Interaksi minimal, namun konsultasikan jika minum obat diabetes.",
+    "indikasi": [
+      "Antiseptik, menenangkan pikiran, menurunkan gula darah, dan mengatasi masalah kulit."
+    ],
+    "sumber": "Jurnal Herbal Islam, Kementerian Kesehatan RI",
+    "tersedia": true,
+    "provinsi": "Aceh",
+    "kandungan": [
+      "Saponin, flavonoid, alkaloid, tanin, polifenol."
+    ],
+    "sumber_foto": "https://gardencenter.co.id/pohon-bidara-arab/"
+  },
+  {
+    "id": 39,
+    "nama": "Rosela",
+    "nama_latin": "Hibiscus sabdariffa L.",
+    "kategori": "Herbal",
+    "gambar": "/images/rosela.png",
+    "warna_tema": "#9C27B0",
+    "manfaat": [
+      "Menurunkan tekanan darah, antioksidan kuat, melancarkan pencernaan, dan menjaga kolesterol."
+    ],
+    "komposisi": [
+      "Kelopak bunga"
+    ],
+    "cara_pembuatan": "Seduh kelopak bunga kering dengan air panas, lalu tambahkan madu.",
+    "dosis": "Aman 1–2 cangkir per hari. Dapat berinteraksi dengan obat antihipertensi; pantau tekanan darah.",
+    "indikasi": [
+      "Menurunkan tekanan darah, antioksidan kuat, melancarkan pencernaan, dan menjaga kolesterol."
+    ],
+    "sumber": "Jurnal Gizi dan Pangan IPB, WHO Monographs",
+    "tersedia": true,
+    "provinsi": "Jawa Timur",
+    "kandungan": [
+      "Antosianin, asam hibiskat, asam askorbat, flavonoid, polifenol."
+    ],
+    "sumber_foto": "https://agri.kompas.com/read/2022/12/17/112700784/cara-menanam-rosella-bunga-yang-bermanfaat-untuk-kesehatan?page=all"
+  },
+  {
+    "id": 40,
+    "nama": "Kayu Secang",
+    "nama_latin": "Caesalpinia sappan L.",
+    "kategori": "Herbal",
+    "gambar": "/images/kayu-secang.png",
+    "warna_tema": "#795548",
+    "manfaat": [
+      "Antiinflamasi, antimikroba, antioksidan, meredakan nyeri, dan menjaga kesehatan jantung."
+    ],
+    "komposisi": [
+      "Kayu batang (serutan)"
+    ],
+    "cara_pembuatan": "Rebus 10 gram serutan kayu dengan 3 gelas air hingga berwarna merah.",
+    "dosis": "Aman dikonsumsi sebagai minuman tradisional. Tidak dianjurkan untuk ibu hamil dalam dosis besar.",
+    "indikasi": [
+      "Antiinflamasi, antimikroba, antioksidan, meredakan nyeri, dan menjaga kesehatan jantung."
+    ],
+    "sumber": "Jurnal Kimia Indonesia, Balai Penelitian Tanaman Rempah",
+    "tersedia": true,
+    "provinsi": "DI Yogyakarta",
+    "kandungan": [
+      "Brazilin, brazilein, sappanin, flavonoid, tanin."
+    ],
+    "sumber_foto": "https://www.halodoc.com/artikel/pohon-secang-manfaat-pengolahan-dan-budidaya-mudah?srsltid=AfmBOopvgrUnNFDPXtvzcgJD7rb7a423NmuhkNXceN55zguEig25JRX1"
+  },
+  {
+    "id": 41,
+    "nama": "Pare",
+    "nama_latin": "Momordica charantia L.",
+    "kategori": "Herbal",
+    "gambar": "/images/pare.png",
+    "warna_tema": "#8B4513",
+    "manfaat": [
+      "Antidiabetes, antioksidan, menurunkan kolesterol, dan memperkuat imun."
+    ],
+    "komposisi": [
+      "Buah dan daun"
+    ],
+    "cara_pembuatan": "Potong buah, lalu rebus atau buat menjadi jus segar.",
+    "dosis": "Aman dalam jumlah makanan normal. Hindari konsumsi biji mentah. Tidak untuk ibu hamil.",
+    "indikasi": [
+      "Antidiabetes, antioksidan, menurunkan kolesterol, dan memperkuat imun."
+    ],
+    "sumber": "Diabetes Care Journal, Jurnal Biologi FMIPA UI",
+    "tersedia": true,
+    "provinsi": "Sulawesi Utara",
+    "kandungan": [
+      "Charantin, vicine, polipeptida-p, flavonoid, saponin."
+    ],
+    "sumber_foto": "https://hellosehat.com/nutrisi/fakta-gizi/manfaat-pare-untuk-kesehatan/"
+  },
+  {
+    "id": 42,
+    "nama": "Ciplukan",
+    "nama_latin": "Physalis angulata L.",
+    "kategori": "Herbal",
+    "gambar": "/images/ciplukan.png",
+    "warna_tema": "#FFD700",
+    "manfaat": [
+      "Antidiabetes, antiinflamasi, antitumor, menurunkan demam, dan mengatasi asma."
+    ],
+    "komposisi": [
+      "Buah, daun, dan akar"
+    ],
+    "cara_pembuatan": "Rebus 10–15 gram seluruh tanaman dengan 3 gelas air.",
+    "dosis": "Aman dalam dosis wajar. Konsultasikan dengan dokter jika minum obat diabetes atau imunosupresan.",
+    "indikasi": [
+      "Antidiabetes, antiinflamasi, antitumor, menurunkan demam, dan mengatasi asma."
+    ],
+    "sumber": "Jurnal Farmasi Universitas Gadjah Mada",
+    "tersedia": true,
+    "provinsi": "Jawa Tengah",
+    "kandungan": [
+      "Fisalin, withanolida, flavonoid, steroid, saponin."
+    ],
+    "sumber_foto": "https://klinikpelitasehat.com/index.php/post/detail/Mzg5Ng==/Kenali-15-Manfaat-Buah-Ciplukan-dan-Cara-Mengolahnya"
+  },
+  {
+    "id": 43,
+    "nama": "Patikan Kebo",
+    "nama_latin": "Euphorbia hirta L.",
+    "kategori": "Herbal",
+    "gambar": "/images/petikan-kebo.png",
+    "warna_tema": "#009688",
+    "manfaat": [
+      "Antiastma, antimikroba, antidiare, menurunkan demam, dan meredakan inflamasi saluran napas."
+    ],
+    "komposisi": [
+      "Seluruh bagian tanaman"
+    ],
+    "cara_pembuatan": "Rebus 15 gram tanaman segar dengan 2 gelas air.",
+    "dosis": "Gunakan dengan hati-hati; getah tanaman dapat mengiritasi kulit. Tidak untuk ibu hamil.",
+    "indikasi": [
+      "Antiastma, antimikroba, antidiare, menurunkan demam, dan meredakan inflamasi saluran napas."
+    ],
+    "sumber": "Journal of Ethnopharmacology, Kemenkes RI",
+    "tersedia": true,
+    "provinsi": "Nusa Tenggara Barat",
+    "kandungan": [
+      "Quersetin, mirisin, asam galat, tanin, flavonoid, terpenoid."
+    ],
+    "sumber_foto": "https://www.alodokter.com/patikan-kebo-tanaman-liar-yang-bermanfaat-untuk-kesehatan"
+  },
+  {
+    "id": 44,
+    "nama": "Akar Kuning",
+    "nama_latin": "Arcangelisia flava (L.) Merr.",
+    "kategori": "Herbal",
+    "gambar": "/images/akar-kuning.png",
     "warna_tema": "#607D8B",
     "manfaat": [
-      "Meredakan batuk kering",
-      "Menambah energi",
-      "Memperkuat daya tahan tubuh anak",
-      "Mengurangi rasa capek"
+      "Antimalaria, antimikroba, hepatoprotektif (menjaga hati), dan antiinflamasi."
     ],
-    "komposisi": ["Beras 50g", "Kencur 10g", "Ampas kelapa 20g", "Gula merah 30g", "Air 600ml"],
-    "cara_pembuatan": "Rendam beras semalam, blender halus dengan kencur dan ampas kelapa. Rebus dengan air, saring, beri gula merah.",
-    "dosis": "1 gelas per hari untuk anak-anak",
+    "komposisi": [
+      "Akar dan batang"
+    ],
+    "cara_pembuatan": "Rebus 15 gram akar kering dengan 3 gelas air hingga tersisa 1 gelas.",
+    "dosis": "Hindari pada ibu hamil. Pantau fungsi hati jika dikonsumsi jangka panjang. Tidak untuk anak-anak.",
     "indikasi": [
-      "Anak-anak sering sakit",
-      "Batuk pilek berulang",
-      "Badan lemas"
+      "Antimalaria, antimikroba, hepatoprotektif (menjaga hati), dan antiinflamasi."
     ],
-    "kontraindikasi": [
-      "Penderita alergi tepung beras",
-      "Penderita diabetes"
+    "sumber": "Jurnal Biologi Tropika Kalimantan, LIPI",
+    "tersedia": true,
+    "provinsi": "Kalimantan Timur",
+    "kandungan": [
+      "Berberina, columbamin, jatrorhizina, palmatin."
     ],
-    "sumber": "Panduan Jamu Nasional Kemenkes RI",
-    "tersedia": false
+    "sumber_foto": "https://www.alodokter.com/5-manfaat-akar-kuning-dan-cara-aman-mengonsumsinya"
+  },
+  {
+    "id": 45,
+    "nama": "Daun Salam",
+    "nama_latin": "Syzygium polyanthum (Wight) Walp.",
+    "kategori": "Herbal",
+    "gambar": "/images/daun-salam.png",
+    "warna_tema": "#4CAF50",
+    "manfaat": [
+      "Menurunkan asam urat, antidiabetes, antihipertensi, dan melancarkan pencernaan."
+    ],
+    "komposisi": [
+      "Daun"
+    ],
+    "cara_pembuatan": "Rebus 10–15 lembar daun segar dengan 3 gelas air hingga mendidih.",
+    "dosis": "Aman dikonsumsi sebagai ramuan. Pantau gula darah jika minum obat antidiabetes bersamaan.",
+    "indikasi": [
+      "Menurunkan asam urat, antidiabetes, antihipertensi, dan melancarkan pencernaan."
+    ],
+    "sumber": "Jurnal Ilmu Kefarmasian Indonesia, BPOM",
+    "tersedia": true,
+    "provinsi": "Jawa Tengah",
+    "kandungan": [
+      "Flavonoid, tanin, minyak atsiri, saponin, lakton, fenol."
+    ],
+    "sumber_foto": "https://desakarangmojo.gunungkidulkab.go.id/first/artikel/739-Manfaat-Daun-Salam-Bagi-Kesehatan"
+  },
+  {
+    "id": 46,
+    "nama": "Beluntas",
+    "nama_latin": "Pluchea indica (L.) Less.",
+    "kategori": "Herbal",
+    "gambar": "/images/beluntas.png",
+    "warna_tema": "#4CAF50",
+    "manfaat": [
+      "Menghilangkan bau badan, meningkatkan nafsu makan, antinyeri, dan meredakan rematik."
+    ],
+    "komposisi": [
+      "Daun"
+    ],
+    "cara_pembuatan": "Daun segar dapat disajikan sebagai lalapan atau direbus.",
+    "dosis": "Aman dikonsumsi sebagai sayuran. Tidak ada efek samping signifikan dalam dosis makanan.",
+    "indikasi": [
+      "Menghilangkan bau badan, meningkatkan nafsu makan, antinyeri, dan meredakan rematik."
+    ],
+    "sumber": "Jurnal Teknologi dan Industri Pangan IPB",
+    "tersedia": true,
+    "provinsi": "Jawa Timur",
+    "kandungan": [
+      "Alkaloid, flavonoid, tanin, minyak atsiri, klorogenik asam."
+    ],
+    "sumber_foto": "https://www.klikdokter.com/gaya-hidup/diet-nutrisi/manfaat-daun-beluntas-untuk-kesehatan-tubuh-anda?srsltid=AfmBOorZhmpn16_zI1CXij0cGKKUdWM4SF1y2KJB0TkRWntlQdfA9-U2"
+  },
+  {
+    "id": 47,
+    "nama": "Temu Putih",
+    "nama_latin": "Curcuma zedoaria (Christm.) Roscoe",
+    "kategori": "Herbal",
+    "gambar": "/images/temu-putih.png",
+    "warna_tema": "#FFC107",
+    "manfaat": [
+      "Antikanker, antijamur, antiinflamasi, melancarkan haid, dan menjaga kesehatan lambung."
+    ],
+    "komposisi": [
+      "Rimpang"
+    ],
+    "cara_pembuatan": "Parut rimpang, rebus dengan air, lalu saring.",
+    "dosis": "Hindari pada ibu hamil karena bersifat stimulan uterus. Batasi konsumsi jangka panjang.",
+    "indikasi": [
+      "Antikanker, antijamur, antiinflamasi, melancarkan haid, dan menjaga kesehatan lambung."
+    ],
+    "sumber": "Asian Pacific Journal of Cancer Prevention, Herbal Indonesia",
+    "tersedia": true,
+    "provinsi": "Sumatra Barat",
+    "kandungan": [
+      "Zedoaron, curzerenon, curdione, kurkuminoid."
+    ],
+    "sumber_foto": "https://aieangekcity.wordpress.com/2019/02/12/temu-putih/"
+  },
+  {
+    "id": 48,
+    "nama": "Akar Wangi",
+    "nama_latin": "Vetiveria zizanioides (L.) Nash",
+    "kategori": "Herbal",
+    "gambar": "/images/akar-wangi.png",
+    "warna_tema": "#607D8B",
+    "manfaat": [
+      "Menenangkan pikiran, mengatasi insomnia, antiseptik, dan meredakan demam."
+    ],
+    "komposisi": [
+      "Akar"
+    ],
+    "cara_pembuatan": "Keringkan akar, lalu rebus dengan 2 gelas air.",
+    "dosis": "Aman dalam dosis herbal. Tidak dianjurkan dalam dosis tinggi untuk ibu hamil.",
+    "indikasi": [
+      "Menenangkan pikiran, mengatasi insomnia, antiseptik, dan meredakan demam."
+    ],
+    "sumber": "Jurnal Aromaterapi Indonesia, Balai Penelitian Tanaman Industri",
+    "tersedia": true,
+    "provinsi": "Jawa Tengah",
+    "kandungan": [
+      "Khusimol, vetiveron, zizanol, flavonoid, terpenoid."
+    ],
+    "sumber_foto": "https://sumeks.disway.id/kesehatan/read/694326/7-manfaat-tanaman-akar-wangi-untuk-kesehatan-bisa-tingkatkan-kinerja-otak"
+  },
+  {
+    "id": 49,
+    "nama": "Pohon Maja",
+    "nama_latin": "Aegle marmelos (L.) Corrêa",
+    "kategori": "Herbal",
+    "gambar": "/images/pohon-maja.png",
+    "warna_tema": "#8B4513",
+    "manfaat": [
+      "Antidiare, antidiabetes, antiinflamasi, menjaga kesehatan jantung, dan antimikroba."
+    ],
+    "komposisi": [
+      "Buah muda dan daun"
+    ],
+    "cara_pembuatan": "Buah muda dipotong dan dikeringkan, lalu direbus sebagai minuman herbal untuk diare.",
+    "dosis": "Aman dalam dosis makanan. Hindari konsumsi berlebihan buah mentah karena dapat memperburuk sembelit.",
+    "indikasi": [
+      "Antidiare, antidiabetes, antiinflamasi, menjaga kesehatan jantung, dan antimikroba."
+    ],
+    "sumber": "Journal of Ethnopharmacology, Kebun Raya Bogor",
+    "tersedia": true,
+    "provinsi": "DI Yogyakarta",
+    "kandungan": [
+      "Marmelosin, aurapten, tanin, alkaloid, flavonoid."
+    ],
+    "sumber_foto": "https://www.alodokter.com/7-manfaat-buah-maja-beserta-kandungan-nutrisinya"
+  },
+  {
+    "id": 50,
+    "nama": "Bayam Duri",
+    "nama_latin": "Amaranthus spinosus L.",
+    "kategori": "Herbal",
+    "gambar": "/images/bayam-duri.png",
+    "warna_tema": "#4CAF50",
+    "manfaat": [
+      "Antianemia, antiinflamasi, diuretik, meningkatkan produksi ASI, dan menurunkan demam."
+    ],
+    "komposisi": [
+      "Daun dan akar"
+    ],
+    "cara_pembuatan": "Daun direbus atau dimakan sebagai sayuran. Akar direbus untuk meredakan demam.",
+    "dosis": "Aman dikonsumsi sebagai sayuran. Kandungan oksalat tinggi; batasi pada penderita batu ginjal.",
+    "indikasi": [
+      "Antianemia, antiinflamasi, diuretik, meningkatkan produksi ASI, dan menurunkan demam."
+    ],
+    "sumber": "Jurnal Botani Sulawesi, LIPI",
+    "tersedia": true,
+    "provinsi": "Gorontalo",
+    "kandungan": [
+      "Betalain, flavonoid, alkaloid, saponin, rutin, asam amino."
+    ],
+    "sumber_foto": "https://www.alodokter.com/bayam-duri-ini-ragam-manfaatnya-untuk-kesehatan"
+  },
+  {
+    "id": 51,
+    "nama": "Gandapura",
+    "nama_latin": "Gaultheria fragrantissima Wall.",
+    "kategori": "Herbal",
+    "gambar": "/images/gandapura.png",
+    "warna_tema": "#4CAF50",
+    "manfaat": [
+      "Meredakan nyeri otot dan sendi, antirematik, antiseptik, dan menghangatkan tubuh."
+    ],
+    "komposisi": [
+      "Daun dan minyak"
+    ],
+    "cara_pembuatan": "Minyak gandapura dioleskan langsung ke bagian yang nyeri dan dipijat perlahan.",
+    "dosis": "Hanya untuk penggunaan topikal. Toksik jika tertelan. Jauhkan dari jangkauan anak-anak.",
+    "indikasi": [
+      "Meredakan nyeri otot dan sendi, antirematik, antiseptik, dan menghangatkan tubuh."
+    ],
+    "sumber": "Jurnal Farmasi dan Ilmu Kefarmasian Indonesia",
+    "tersedia": true,
+    "provinsi": "Sumatra Utara",
+    "kandungan": [
+      "Metil salisilat, gaultherin, tanin, flavonoid."
+    ],
+    "sumber_foto": "https://id.wikipedia.org/wiki/Gandapura"
+  },
+  {
+    "id": 52,
+    "nama": "Jati Belanda",
+    "nama_latin": "Guazuma ulmifolia Lam.",
+    "kategori": "Herbal",
+    "gambar": "/images/jati-belanda.png",
+    "warna_tema": "#4CAF50",
+    "manfaat": [
+      "Membantu menurunkan berat badan, mengurangi penyerapan lemak, dan menurunkan kolesterol."
+    ],
+    "komposisi": [
+      "Daun"
+    ],
+    "cara_pembuatan": "Rebus 7 lembar daun kering dengan 2 gelas air hingga tersisa 1 gelas.",
+    "dosis": "Aman dalam dosis wajar. Konsumsi jangka panjang perlu dipantau, hindari bersamaan obat penurun lemak.",
+    "indikasi": [
+      "Membantu menurunkan berat badan, mengurangi penyerapan lemak, dan menurunkan kolesterol."
+    ],
+    "sumber": "Jurnal Gizi Klinik Indonesia, BPOM",
+    "tersedia": true,
+    "provinsi": "Bali",
+    "kandungan": [
+      "Tanin, musilago, flavonoid, kafein, proksianidin."
+    ],
+    "sumber_foto": "https://vivaapotek.co.id/artikel/tips-info-sehat/manfaat-daun-jati-belanda-untuk-kesehatan/"
+  },
+  {
+    "id": 53,
+    "nama": "Meniran",
+    "nama_latin": "Phyllanthus niruri L.",
+    "kategori": "Herbal",
+    "gambar": "/images/meniran.png",
+    "warna_tema": "#009688",
+    "manfaat": [
+      "Meningkatkan imunitas, antivirus (hepatitis B), diuretik, dan membantu pemulihan liver."
+    ],
+    "komposisi": [
+      "Seluruh bagian tanaman"
+    ],
+    "cara_pembuatan": "Rebus 30 gram tanaman segar dengan 3 gelas air hingga tersisa 1 gelas.",
+    "dosis": "Aman untuk dewasa. Tidak untuk ibu hamil. Dapat berinteraksi dengan obat diabetes dan antikoagulan.",
+    "indikasi": [
+      "Meningkatkan imunitas, antivirus (hepatitis B), diuretik, dan membantu pemulihan liver."
+    ],
+    "sumber": "Phytomedicine Journal, Jurnal Ilmu Kefarmasian Indonesia",
+    "tersedia": true,
+    "provinsi": "Lampung",
+    "kandungan": [
+      "Filantin, hipofilantin, flavonoid, lignan, alkaloid, tanin."
+    ],
+    "sumber_foto": "https://www.halodoc.com/artikel/5-manfaat-daun-meniran-untuk-kesehatan-tubuh?srsltid=AfmBOoooCDXpFcX1_2HzQ0T-oM52r7ekVxRdu2TZTHxr1lz6fAVu_mAV"
+  },
+  {
+    "id": 54,
+    "nama": "Kayu Ular",
+    "nama_latin": "Strychnos lucida R.Br.",
+    "kategori": "Herbal",
+    "gambar": "/images/kayu-ular.png",
+    "warna_tema": "#795548",
+    "manfaat": [
+      "Antimalaria, antipiretik, antinyeri, dan digunakan secara tradisional untuk mengatasi gigitan ular."
+    ],
+    "komposisi": [
+      "Kulit batang dan akar"
+    ],
+    "cara_pembuatan": "Rebus kulit batang dengan 3 gelas air.",
+    "dosis": "Berpotensi toksik dalam dosis tinggi karena kandungan strychnin. Harus di bawah pengawasan ketat.",
+    "indikasi": [
+      "Antimalaria, antipiretik, antinyeri, dan digunakan secara tradisional untuk mengatasi gigitan ular."
+    ],
+    "sumber": "Penelitian Etnobotani Maluku, LIPI",
+    "tersedia": true,
+    "provinsi": "Maluku Utara",
+    "kandungan": [
+      "Brucin, strychnin, alkaloid, flavonoid."
+    ],
+    "sumber_foto": "https://bnp.jambiprov.go.id/10-manfaat-kayu-ular-obat-tradisional-dari-papua/"
+  },
+  {
+    "id": 55,
+    "nama": "Daun Wungu",
+    "nama_latin": "Graptophyllum pictum (L.) Griff.",
+    "kategori": "Herbal",
+    "gambar": "/images/daun-ungu.png",
+    "warna_tema": "#4CAF50",
+    "manfaat": [
+      "Mengobati wasir, antiinflamasi, menyembuhkan luka, dan menurunkan demam."
+    ],
+    "komposisi": [
+      "Daun"
+    ],
+    "cara_pembuatan": "Rebus 7 lembar daun dengan 2 gelas air hingga tersisa 1 gelas.",
+    "dosis": "Aman dalam dosis wajar. Tidak ada interaksi obat signifikan yang dilaporkan.",
+    "indikasi": [
+      "Mengobati wasir, antiinflamasi, menyembuhkan luka, dan menurunkan demam."
+    ],
+    "sumber": "Jurnal Tumbuhan Obat Papua, Universitas Cenderawasih",
+    "tersedia": true,
+    "provinsi": "Papua Tengah",
+    "kandungan": [
+      "Alkaloid, flavonoid, saponin, tanin, sterol."
+    ],
+    "sumber_foto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkqyASz_d5M6bgfp0rxcPXolS6D2aIAfNG3ejKKaAvZA&s=10"
+  },
+  {
+    "id": 56,
+    "nama": "Sukun",
+    "nama_latin": "Artocarpus altilis (Parkinson ex F.A.Zorn) Fosberg",
+    "kategori": "Herbal",
+    "gambar": "/images/sukun.png",
+    "warna_tema": "#4CAF50",
+    "manfaat": [
+      "Mengontrol gula darah, menurunkan kolesterol, antihipertensi, dan antiinflamasi."
+    ],
+    "komposisi": [
+      "Daun"
+    ],
+    "cara_pembuatan": "Rebus 3 lembar daun tua yang telah dikeringkan dengan 3 gelas air.",
+    "dosis": "Aman dikonsumsi. Pantau tekanan darah dan gula darah jika mengonsumsi obat-obatan terkait.",
+    "indikasi": [
+      "Mengontrol gula darah, menurunkan kolesterol, antihipertensi, dan antiinflamasi."
+    ],
+    "sumber": "Jurnal Teknologi dan Pangan Tropika, Balai Penelitian Kehutanan",
+    "tersedia": true,
+    "provinsi": "Sulawesi Tengah",
+    "kandungan": [
+      "Flavonoid, saponin, polifenol, terpenoid, sikloartenol."
+    ],
+    "sumber_foto": "https://hellosehat.com/herbal-alternatif/herbal/manfaat-daun-sukun/"
+  },
+  {
+    "id": 57,
+    "nama": "Mengkudu Hutan",
+    "nama_latin": "Morinda elliptica (Hook.f.) Ridl.",
+    "kategori": "Herbal",
+    "gambar": "/images/mengkudu-hutan.png",
+    "warna_tema": "#E91E63",
+    "manfaat": [
+      "Antikanker, antioksidan, meningkatkan daya tahan tubuh, dan antibakteri."
+    ],
+    "komposisi": [
+      "Akar dan buah"
+    ],
+    "cara_pembuatan": "Rebus akar 15 gram dengan 3 gelas air, lalu saring.",
+    "dosis": "Gunakan dalam dosis wajar. Konsultasikan dengan tenaga medis sebelum digunakan bersamaan dengan obat kemoterapi.",
+    "indikasi": [
+      "Antikanker, antioksidan, meningkatkan daya tahan tubuh, dan antibakteri."
+    ],
+    "sumber": "Journal of Ethnopharmacology, BPPT Indonesia",
+    "tersedia": true,
+    "provinsi": "Kalimantan Tengah",
+    "kandungan": [
+      "Antrakuinon, morindin, asam ursulat, flavonoid."
+    ],
+    "sumber_foto": "https://agri.kompas.com/read/2023/07/16/135816184/cara-menanam-mengkudu-buah-asli-indonesia-yang-kaya-manfaat?page=all"
   }
 ]
